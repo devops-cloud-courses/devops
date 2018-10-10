@@ -9,7 +9,7 @@
 
 ### Cycle en V / Waterfall
 
-<img src="images/waterfall.png"/>
+<img src="images/waterfall.png" style="background:none; border:none; box-shadow:none;"/>
 
 * Utilisé pendant des années dans une majorité des projets informatiques
 * Cycle de développement long
@@ -17,9 +17,11 @@
 
 ----
 
-### L'agilité par le SCRUM
+### L'agilité par le Scrum
 
-* Ken Schwaber 
+* présenté par Ken Schwaber en 1995
+* publié dans son manifeste en 2001
+* définit des méthodes et pratiques de pilotage et réalisation de projets
 
 ----
 
@@ -34,11 +36,14 @@
 
 ### Les rôles de l'agilité
 
-* le Product Owner (PO)
+* le Product Owner (PO): vision du produit à réaliser
+* l'équipe de Développement : équipe pluridisciplinaire chargée de réaliser les besoins exprimés par le PO
+* le Scrum Master : chargé de faire respecter les principes Scrum au sein de l'équipe
 
 ----
 
 ### Limites de l'agilité
 
-* Seule la création des livrables est agile
-* Toutes les équipes ne sont pas concernées
+* Seule l'équipe de dev est agile 
+* Quid du déploiement des applications ?
+* Ne se concentre que sur la livraison d'un logiciel
