@@ -1,4 +1,4 @@
-# Cours cloud ECE
+# Cours DevOps ECE
 #### By
 ##### Laurent Grangeau & Arthur Mauvezin
 
@@ -30,7 +30,7 @@
 
 * Des compétences maintenant indispensables
 * Connaissances applicables dans tous les domaines de l'informatique
-* Connaissances demandées sur le marché
+* Connaissances **très** demandées sur le marché
 
 ---
 
