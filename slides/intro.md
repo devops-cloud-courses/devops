@@ -19,6 +19,19 @@
 ## Who we are ?
 
 > Arthur Mauvezin<br />
-> DevOps Engineer @ FFF
+> DevOps Engineer @ Ouidou Consulting
 
-<img src="https://avatars3.githubusercontent.com/u/10439516?s=460&v=4" width="200px" />
+<!--img src="https://avatars3.githubusercontent.com/u/10439516?s=460&v=4" width="200px" /-->
+<img src="https://avatars2.githubusercontent.com/u/10439516?s=400&u=27155f0ca1ec897597b113b9677934db02901d9a&v=4" width="200px" />
+
+---
+
+## Pourquoi ce cours ?
+
+* Des compétences maintenatn indispensables
+* Connaissances applicables dans tous les domaines de l'informatique
+* Connaissances demandées sur le marché
+
+---
+
+## N'hésitez pas à poser vos questions à tout moment !
