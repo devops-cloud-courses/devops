@@ -38,9 +38,8 @@ Recherche la stabilité organisationnelle et de la plateforme de production afin
 * Automatisation
 * Lean 
 * Mesure
-* Sharing/Solidarité
+* Sharing
 
----- 
 ---- 
 
 #### Culture
