@@ -41,7 +41,7 @@ Recherche la stabilité organisationnelle et de la plateforme de production afin
 
 ---- 
 
-#### Culture
+### Culture
 
 > Le DevOps ne résout pas les problèmes d'outils. Il résout les problèmes humains.
 
@@ -49,7 +49,7 @@ Tous les membres de l'équipe travaillent au service du produit.
 
 ----
 
-#### Automatisation
+### Automatisation
 
 Tout automatiser pour avoir un feed back plus rapide
 * build
@@ -59,7 +59,7 @@ Tout automatiser pour avoir un feed back plus rapide
 
 ----
 
-#### Lean
+### Lean
 
 Eliminer les activités à faibles valeurs ajoutée et s'améliorer continuellement
 * Retrospective agiles
@@ -68,7 +68,7 @@ Eliminer les activités à faibles valeurs ajoutée et s'améliorer continuellem
 
 ----
 
-#### Mesure
+### Mesure
 
 Tout mesurer, tout le temps
 * l'usage
@@ -78,7 +78,7 @@ Tout mesurer, tout le temps
 
 ----
 
-#### Sharing
+### Sharing
 
 Partager les rôles, partager les responsabilités, partager les échecs et les réussites
 * Un dev doit participer au à la livraison et au déploiement de son livrable
