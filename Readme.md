@@ -8,7 +8,7 @@
 * C'est une formation qui est proposée en interne dans les sociétés
 * Les sujets traités dans cette formation augmentent considérablement la valeur des profils sur le marché
 
-## Pourquoi le DevOps
+## DevOps
 ### Devs vs Ops
 * Devs: Toute personne impliqué dans la fabrication du logiciel jusqu’à la livraison de celui-ci => recherche le changement continuelle afin de satisfaire le client final (nouvelles fonctionnalités amélioration des performances, expérience utilisateur)
 * Ops: Toute personne impliqué dans la maintenance et l’exploitation de la production => recherche la stabilité organisationnelle et de la plateforme de production afin de maintenir un niveau de satisfaction client élevé
@@ -24,4 +24,12 @@ Faire tomber le mur de la confusion
 * Lean : Les équipes Devs et les équipes Ops doivent trouver des moyens pour réduire les déchets et rationaliser les processus en entier.
 * Mesure : Etre capable de mesurer les performances et les améliorations apportées au produit #Monitoring #KPI
 * Sharing : Il est important de partager les avantages entre les équipes ==> #Communication #Collaboration #Partage #Interaction
+
+### Les différentes sous parties du Devops
+* Mentalité /
+* Bonnes pratiques
+* Continous Integration
+* Continuous Delivery
+
+## Continuous Integration
 
