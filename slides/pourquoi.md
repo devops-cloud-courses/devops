@@ -11,9 +11,9 @@
 
 <img src="images/waterfall.png"/>
 
-* Utilisé pendent des années dans une majorité des projets informatiques
-* Cycle de developemment longs
-* Les livrables ne correspondent pas à ce qui a été demandé
+* Utilisé pendant des années dans une majorité des projets informatiques
+* Cycle de développement long
+* Les livrables ne correspondent pas toujours à ce qui a été demandé
 
 ----
 
