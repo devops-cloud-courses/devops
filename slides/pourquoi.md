@@ -9,7 +9,7 @@
 ### Cycle en V / Waterfall
 
 <!--img src="images/waterfall.png"  height="100" width="200"-->
-<img src="images/waterfall.png"  height="100" width="200">
+<img src="images/waterfall.png">
 
 * Utilisé pendent des années lors de tous les projets informatiques
 * Cycle de developemment longs
