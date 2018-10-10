@@ -41,6 +41,7 @@ Recherche la stabilité organisationnelle et de la plateforme de production afin
 * Sharing/Solidarité
 
 ---- 
+---- 
 
 #### Culture
 
