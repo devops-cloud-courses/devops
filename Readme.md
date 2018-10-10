@@ -26,6 +26,16 @@ comment
 combien 
 pourquoi
 
+## Reveal useful
+<img src="images/waterfall.png">
+<img src="images/waterfall.png" height="200" width="200" />
+<img src="images/waterfall.png" style="background:none; border:none; box-shadow:none;"/>
+![Image](https://images.techhive.com/images/article/2016/03/amazon-cloud-dc-map-100651841-large.idge.gif)
+<img src="https://www.agileit.com/wp-content/uploads/2017/11/az-graphic-two.png" width="35%" />
+
+- Value
+ - Subvalue
+
 
 ## Parties
 ### Intro
@@ -68,6 +78,7 @@ Notes:
 
 ### Continous Integration
 #### Qu'est ce que l'intégration
+#### Gitflow
 #### Build
 #### Test
 * unit
@@ -150,6 +161,9 @@ RAF:
 * Remise en question perpetuelle
 * Un nouvel arrivant prend super cher pour apprendre tout en arrivant
 
+* Sonar
+* 12 factor app
+
 COnclusion d'un devops:
 * Tout le monde peut/doit être moteur
 * NE pas hésiter à automatiser ou a proposer une automatisation
@@ -165,3 +179,4 @@ COnclusion d'un devops:
 * Pet vs Cattle
 * Gestion de logs
 * Gestion du monitoring
+
