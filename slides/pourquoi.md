@@ -3,26 +3,27 @@
 ----
 
 ### Petit retour en arrière
+<img src="https://png.icons8.com/metro/1600/rewind.png"/>
 
 ----
 
 ### Cycle en V / Waterfall
 
-<!--img src="images/waterfall.png"  height="100" width="200"-->
-<img src="images/waterfall.png">
+<img src="images/waterfall.png"/>
 
-* Utilisé pendent des années lors de tous les projets informatiques
+* Utilisé pendent des années dans une majorité des projets informatiques
 * Cycle de developemment longs
+* Les livrables ne correspondent pas à ce qui a été demandé
 
 ----
 
 ### L'agilité
 
-* Ken
+* Ken 
 
 ----
 
-### Qu'est ce que l'agilité
+### Piliers de l'agilité
 
 
 ----
