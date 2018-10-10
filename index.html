@@ -28,6 +28,15 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
+				<section data-markdown="slides/title.md"
+				data-separator="^\r?\n---\r?\n$"
+				data-separator-vertical="^\r?\n----\r?\n$"
+				data-separator-notes="^Note:"
+				data-charset="utf-8">
+					<!--
+						Note that Windows uses `\r\n` instead of `\n` as its linefeed character.
+						For a regex that supports all operating systems, use `\r?\n` instead of `\n`.
+					-->
 				<section data-markdown="slides/intro.md"
 				data-separator="^\r?\n---\r?\n$"
 				data-separator-vertical="^\r?\n----\r?\n$"

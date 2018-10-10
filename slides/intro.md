@@ -1,13 +1,8 @@
-# Cours DevOps ECE
-#### By
-##### Laurent Grangeau & Arthur Mauvezin
-
-<i><a target="_new" href="http://twitter.com/laurentgrangeau">@laurentgrangeau</a> | <a target="_new" href="http://github.com/laurentgrangeau">http://github.com/laurentgrangeau</a></i>
-<i><a target="_new" href="http://twitter.com/arthurmauvezin">@arthurmauvezin</a> | <a target="_new" href="http://github.com/arthurmauvezin">http://github.com/arthurmauvezin</a></i>
+## Introduction
 
 ---
 
-## Who we are ?
+### Who we are ?
 
 > Laurent Grangeau<br />
 > Cloud Solution Architect @ Sogeti
@@ -16,7 +11,7 @@
 
 ---
 
-## Who we are ?
+### Who we are ?
 
 > Arthur Mauvezin<br />
 > DevOps Engineer @ Ouidou Consulting
@@ -26,7 +21,11 @@
 
 ---
 
-## Pourquoi ce cours ?
+### Qui a déjà entendu parler du DevOps ?
+
+---
+
+### Pourquoi ce cours ?
 
 * Des compétences maintenant indispensables
 * Connaissances applicables dans tous les domaines de l'informatique
@@ -34,4 +33,4 @@
 
 ---
 
-## N'hésitez pas à poser vos questions à tout moment !
+### N'hésitez pas à poser vos questions à tout moment !

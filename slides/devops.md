@@ -2,23 +2,21 @@
 
 ----
 
-### Petit retour en arrière
-<img src="https://png.icons8.com/metro/1600/rewind.png" height="200" width="200" style="background:none; border:none; box-shadow:none;"/>
+### Les acteurs : Devs
+Toute personne impliqué dans la fabrication du logiciel jusqu’à la livraison de celui-ci
+
+Recherche le changement continuel afin de satisfaire le client final (nouvelles fonctionnalités amélioration des performances, expérience utilisateur)
 
 ----
 
-### Les acteurs
-#### Devs
-Toute personne impliqué dans la fabrication du logiciel jusqu’à la livraison de celui-ci
-
-#### Ops
+### Les acteurs : Ops
 Toute personne impliqué dans la maintenance et l’exploitation de la production
 
 ----
 
 ### Definition
-Le DevOps est un mouvement visant à l’alignement de l’ensemble des équipes du système d’information sur un objectif commun, à commencer par les équipes de Dev chargées de faire évoluer le système d’information et les Ops responsables des infrastructures.
-DevOps est la pratique où les ingénieurs de développement (Dev) et d’exploitation (Ops) participent ensemble à l’intégralité du cycle de vie de services : de la conception au support de production en passant par le développement.
+> Le DevOps est un mouvement visant à l’alignement de l’ensemble des équipes du système d’information sur un objectif commun, à commencer par les équipes de Dev chargées de faire évoluer le système d’information et les Ops responsables des infrastructures.
+> DevOps est la pratique où les ingénieurs de développement (Dev) et d’exploitation (Ops) participent ensemble à l’intégralité du cycle de vie de services : de la conception au support de production en passant par le développement.
 
 ----
 
