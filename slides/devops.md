@@ -33,6 +33,7 @@ Recherche la stabilité organisationnelle et de la plateforme de production afin
 ----
 
 ### Keep CALMS : Piliers du DevOps
+
 * Culture
 * Automatisation
 * Lean 
@@ -41,15 +42,14 @@ Recherche la stabilité organisationnelle et de la plateforme de production afin
 
 ---- 
 
-### Culture
+#### Culture
 
 > Le DevOps ne résout pas les problèmes d'outils. Il résout les problèmes humains.
-
 Tous les membres de l'équipe travaillent au service du produit.
 
 ----
 
-### Automatisation
+#### Automatisation
 
 Tout automatiser pour avoir un feed back plus rapide
 * build
@@ -59,7 +59,7 @@ Tout automatiser pour avoir un feed back plus rapide
 
 ----
 
-### Lean
+#### Lean
 
 Eliminer les activités à faibles valeurs ajoutée et s'améliorer continuellement
 * Retrospective agiles
@@ -68,7 +68,7 @@ Eliminer les activités à faibles valeurs ajoutée et s'améliorer continuellem
 
 ----
 
-### Mesure
+#### Mesure
 
 Tout mesurer, tout le temps
 * l'usage
@@ -78,7 +78,7 @@ Tout mesurer, tout le temps
 
 ----
 
-### Sharing
+#### Sharing
 
 Partager les rôles, partager les responsabilités, partager les échecs et les réussites
 * Un dev doit participer au à la livraison et au déploiement de son livrable
@@ -88,7 +88,7 @@ Partager les rôles, partager les responsabilités, partager les échecs et les 
 ### Sympa la près, mais c'est quoi le DevOps concrètement ?
 
 * C'est une mentalité avant tout, comme l'agilité
-* Se poser la question d'ou vient mon livrable d'entré et ou va le livrable que je produit
+* Se poser la question d'ou vient mon livrable d'entrée et ou va le livrable que je produis
 * Toujours penser automatisation !
 * Se poser la question de l'amélioration continue en permanence
 * Dialoguer / se mettre à la place des autres équipes
