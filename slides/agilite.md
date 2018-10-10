@@ -19,9 +19,10 @@
 
 ### L'agilité par le Scrum
 
-* présenté par Ken Schwaber en 1995
-* publié dans son manifeste en 2001
+* présenté par Ken Schwaber en 1995, publié dans son manifeste en 2001
 * définit des méthodes et pratiques de pilotage et réalisation de projets
+* basé sur un système d'**itérations successives**
+<img src="images/agility.png" style="background:none; border:none; box-shadow:none;"/>
 
 ----
 
