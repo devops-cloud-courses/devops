@@ -3,7 +3,7 @@
 ----
 
 ### Petit retour en arrière
-<img src="https://png.icons8.com/metro/1600/rewind.png"/>
+<img src="https://png.icons8.com/metro/1600/rewind.png" height="200" width="200" style="background:none; border:none; box-shadow:none;"/>
 
 ----
 
@@ -29,7 +29,4 @@
 ----
 
 ### Limites de l'agilité
-
-
-----
 
