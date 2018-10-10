@@ -26,9 +26,13 @@
 
 ---
 
+## Intro
+
+----
+
 ### Qui a déjà entendu parler du DevOps ?
 
----
+----
 
 ### Pourquoi ce cours ?
 
@@ -36,6 +40,6 @@
 * Connaissances applicables dans tous les domaines de l'informatique
 * Connaissances **très** demandées sur le marché
 
----
+----
 
 ### N'hésitez pas à poser vos questions à tout moment !
