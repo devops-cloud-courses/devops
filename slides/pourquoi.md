@@ -1,4 +1,4 @@
-## Pourquoi le DevOps
+## L'agilité
 
 ----
 
@@ -17,16 +17,28 @@
 
 ----
 
-### L'agilité
+### L'agilité par le SCRUM
 
-* Ken 
+* Ken Schwaber 
 
 ----
 
 ### Piliers de l'agilité
 
+* Les Individus et leurs interactions plus que les processus et les outils
+* Des logiciels opérationnels plus qu'une documentation exhaustive
+* La collaboration avec les clients plus que la négociation contractuelle
+* L'adaptation au changement plus que le suivi d'un plan
+
+----
+
+### Les rôles de l'agilité
+
+* le Product Owner (PO)
 
 ----
 
 ### Limites de l'agilité
 
+* Seule la création des livrables est agile
+* Toutes les équipes ne sont pas concernées

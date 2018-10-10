@@ -28,7 +28,7 @@
 
 ## Pourquoi ce cours ?
 
-* Des compétences maintenatn indispensables
+* Des compétences maintenant indispensables
 * Connaissances applicables dans tous les domaines de l'informatique
 * Connaissances demandées sur le marché
 
