@@ -31,6 +31,7 @@
 #### Utiliser Git sur des petites projets
 
 On peut travailler sur une seule branche
+
 Problèmes:
 * conflits récurrents si plusieurs personnes commit en même temps
 * séparer les évolution fonctionnelles différentes
