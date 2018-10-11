@@ -95,7 +95,10 @@ Notes:
 * Mettre l'image avec toutes les flèches de la vidéo
 * Etre réactif
 * Etre réactif !!! (débug, deployement, ) 
+* Continuous feedback
+* le signe infini devops en image
 
+---
 ### Conclusion
 * Métier très logique
 
@@ -106,6 +109,7 @@ Notes:
 
 * livrer souvent, livrer vite, livrer sans régression
 * Développer avec la cible (tous les environements son ISO)
+
 * Culture des logs, de la mesure
 * le dev a le métier qui est entre la prod et ĺ'exploitant (bof comme phrase)
 * Feature flipping
@@ -163,10 +167,22 @@ RAF:
 
 * Sonar
 * 12 factor app
+* XP
 
 COnclusion d'un devops:
 * Tout le monde peut/doit être moteur
 * NE pas hésiter à automatiser ou a proposer une automatisation
+
+# A ne pas oublier
+* ancien de l'ece
+* travaille à la fff
+
+
+
+* mise en place par le bas (les équipes techniques)
+* livrer plus vite
+* travailler plus intelligemment
+* Réduire le TTM (time to market)
 
 
 --------------------------------

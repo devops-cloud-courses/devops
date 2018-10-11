@@ -95,3 +95,4 @@ Partager les rôles, partager les responsabilités, partager les échecs et les 
 * Se poser la question de l'amélioration continue en permanence
 * Dialoguer / se mettre à la place des autres équipes
 
+

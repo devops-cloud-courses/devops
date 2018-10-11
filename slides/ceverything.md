@@ -9,6 +9,8 @@
 
 ### D'autres sous-domaines peuvent être ajoutés dans le futur
 
+* Continuous feedback
+
 ----
 
 ### Compétences / Outils

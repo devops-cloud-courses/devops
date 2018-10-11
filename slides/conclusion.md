@@ -1,3 +1,4 @@
 ## En conclusion
 
-Le cloud c'est la vie
+* livrer souvent, livrer vite, livrer sans régression
+
