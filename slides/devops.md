@@ -95,4 +95,21 @@ Partager les rôles, partager les responsabilités, partager les échecs et les 
 * Se poser la question de l'amélioration continue en permanence
 * Dialoguer / se mettre à la place des autres équipes
 
+----
 
+### Mise en place du DevOps
+
+* Pas une tâche simple car on ne peut pas imposer une mentalité
+* Une société peut se définir comme DevOps dès qu'elle arrive à adopter cette mentalité
+* Mais la route est longue et quasi infinie
+
+----
+
+### Comment on fait pour démarrer
+
+* Le DevOps peut venir du bas: une équipe peut être moteur 
+* Partir de méthodologies simples à appliquer au sein d'une équipe
+* Souvent, la mise en place démarre par le déploiement de solutions d'automatisations:
+  * Continuous Integration
+  * Continuous Delivery
+  * Continuous Deployement
