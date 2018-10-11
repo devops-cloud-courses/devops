@@ -15,6 +15,10 @@
 
 ----
 
+### Contiuous Feedback
+
+----
+
 ### Compétences / Outils
 
 * Outils d'infra as code (puppet, ansible, chef)

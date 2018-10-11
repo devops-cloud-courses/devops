@@ -67,6 +67,7 @@ Eliminer les activités à faibles valeurs ajoutée et s'améliorer continuellem
 * Retrospective agiles
 * Test A/B
 * Assimiler les échecs et tirer des leçons
+* Les applications doivent être **résilientes**
 
 ----
 
@@ -94,6 +95,8 @@ Partager les rôles, partager les responsabilités, partager les échecs et les 
 * Toujours penser automatisation !
 * Se poser la question de l'amélioration continue en permanence
 * Dialoguer / se mettre à la place des autres équipes
+* Développer à la cible (même environement)
+* Réduire le Time To Market (TTM)
 
 ----
 
@@ -109,7 +112,8 @@ Partager les rôles, partager les responsabilités, partager les échecs et les 
 
 * Le DevOps peut venir du bas: une équipe peut être moteur 
 * Partir de méthodologies simples à appliquer au sein d'une équipe
-* Souvent, la mise en place démarre par le déploiement de solutions d'automatisations:
+* Mettre en place le déploiement de solutions d'automatisations:
   * Continuous Integration
   * Continuous Delivery
   * Continuous Deployement
+  * Continuous Operations

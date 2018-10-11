@@ -139,3 +139,8 @@ Problèmes:
 ----
 
 #### Et pleins d'autres ...
+
+* TDD - Test Driven Development
+* BDD - Behavior Driern Development
+* Feature Flipping
+* Test A/B
