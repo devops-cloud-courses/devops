@@ -83,7 +83,7 @@ Tout mesurer, tout le temps
 #### Sharing
 
 Partager les rôles, partager les responsabilités, partager les échecs et les réussites
-* Un dev doit participer au à la livraison et au déploiement de son livrable
+> Un dev doit participer à la livraison et au déploiement de son livrable
 
 ----
 
