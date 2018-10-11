@@ -7,20 +7,43 @@
 
 ----
 
+### Récolte des metrics
+
+Monitoring des applications:
+* Ressources (RAM, CPU, Network,...)
+* Etat (UP/Down)
+* Temps de réponse
+
+----
+
+### Centralisation des logs
+
+Vue aggrégée des logs permettant de dégager des metrics intérressantes :
+* l'usage
+* alertes critiques
+* temps de réponse
+* nombre de bugs
+
+----
+
+### Scalabilité automatique
+
+* Permettre aux applications de se scaler automatiquement en cas d'un afflux trop important de demandes
+* L'afflux est mesuré grâce aux solutions de collecte de metrics et de centralisation des logs
+
+----
+
 ### Infrastructure as Code
 
-----
-
-### Infrastructure toujours à jour
-
-----
-
-### Contiuous Feedback
+> Déployer automatiquement les machines et toutes les dépendances nécéssaires au bon fonctionnement des applicatif
 
 ----
 
 ### Compétences / Outils
 
-* Outils d'infra as code (puppet, ansible, chef)
-* Compétences système et réseau
+* Monitoring : Centreon, Prometheus, InfluxDB, Grafana
+* Centralisation des logs : ElasticSearch, Logstash, Kibana, Filebeat, ...
+* Outils d'infra as code : Terraform, Puppet, Ansible, Chef, Salt, ...
+* Compétences système et réseau avancées
+
 
