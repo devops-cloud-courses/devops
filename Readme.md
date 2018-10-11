@@ -99,6 +99,11 @@ Notes:
 * le signe infini devops en image
 
 ---
+# Remarque
+* Par rapport au team devops, ajouter à la fin de devops, que ce sont des améliorations HUMAINES et techniques
+
+* TDD / BDD
+
 ### Conclusion
 * Métier très logique
 
@@ -112,10 +117,12 @@ Notes:
 
 * Culture des logs, de la mesure
 * le dev a le métier qui est entre la prod et ĺ'exploitant (bof comme phrase)
+
 * Feature flipping
 * Test AB
 * TDD - Test Driven Development
 * BDD - Behavior Driven Development
+
 
 * un max de résilience (capacité de mon app à rendre du service même en cas de tombage d'une partie du système)
 
@@ -140,14 +147,18 @@ Plan > Code > Build > Test > Release > Deploy > Operate
 * Sonar - qualité du code source
 * Réduire toutes les taches et automatiser un maximum
 * Tests de charge - 
+
+----
+
 * Jenkins - pipeline - validation + tampon de l'appli
 * Toutes les confs sont du code - donc faisable par tous les devs logiques
 
 * Truck/Bus factor : si quelqu'un se fait écraser en rentrant du taff, il faut qu'elle puisse être remplacée facilement
 * Protocole de validation post mise en prod et suivi après les mises en prod + test a/b pour ouvrir petit à petit pour tout le monde. Le dev suit ce qui se passe avec un l'ops pour vérifier si ça se passe bien
 
-COntinuous Operations:
 * vérification de la résilience (rien a foutre dans cette partie mais il fallait le noter)
+
+COntinuous Operations:
 * Recolte des metrics : Monitoring
 * Centralisation des logs
 * Scalabilité automatique
@@ -156,6 +167,9 @@ COntinuous Operations:
 PRA - Plan de reprise de l'activité
 
 * Livraison à chaque sprint == le rève !!
+
+* Continuous feedback
+* Mettre de la doc et lien vers la doc interessente (12 factor)
 
 RAF:
 * Reste à rendre scalable
