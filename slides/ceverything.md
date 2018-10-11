@@ -15,6 +15,6 @@ Exemple : Continuous feedback
 
 ### Compétences / Outils
 
-* Etre curieux
-* S'adapter vite
-* Prendre des informations partout ou vous passez
+* Etre **curieux**
+* S'**adapter** vite
+* **Prendre des informations** partout où vous passez

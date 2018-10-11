@@ -41,4 +41,4 @@
 
 ### Compétences 
 
-* Packaging appli (mvn, npm, msbuild, python, docker, ...)
+* Packaging appli : Maven, NPM, MsBuild, Python, Docker, ...

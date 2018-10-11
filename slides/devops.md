@@ -5,14 +5,14 @@
 ### Les acteurs : Devs
 > Toute personne impliquée dans la fabrication du logiciel jusqu’à la livraison de celui-ci
 
-Recherche le changement continuel afin de satisfaire le client final (nouvelles fonctionnalités amélioration des performances, expérience utilisateur)
+Recherche le changement continu afin de satisfaire le client final (nouvelles fonctionnalités amélioration des performances, expérience utilisateur)
 
 ----
 
 ### Les acteurs : Ops
 > Toute personne impliquée dans la maintenance et l’exploitation de la production
 
-Recherche la stabilité organisationnelle et de la plateforme de production afin de maintenir un niveau de satisfaction client élevé
+Recherche la stabilité organisationnelle et de la plateforme de production afin de maintenir un niveau de satisfaction client élevée
 
 ----
 
@@ -21,13 +21,12 @@ Recherche la stabilité organisationnelle et de la plateforme de production afin
 
 ----
 
-### Faire tomber le mur !!
+### Faire tomber le mur!
 <img src="https://www.niceideas.ch/roller2/badtrash/mediaresource/ce967df5-4dca-4f37-a480-b683bd742259" style="background:none; border:none; box-shadow:none;" />
 
 ----
 
 ### Le DevOps s'appuie sur des fondements agiles
-
 <img src="images/devops.jpg" style="background:none; border:none; box-shadow:none;"/>
 
 ----
@@ -40,24 +39,22 @@ Recherche la stabilité organisationnelle et de la plateforme de production afin
 * Mesure
 * Sharing
 
-
 ----
-
 
 #### Culture
 
 > Le DevOps ne résout pas les problèmes d'outils. Il résout les problèmes humains.
-Tous les membres de l'équipe travaillent au service du produit.
+Tous les membres de l'équipe travaillent **au service du produit**.
 
 ----
 
 #### Automatisation
 
-Tout automatiser pour avoir un feed back plus rapide
-* build
-* test
-* livraison
-* déploiement
+Tout automatiser pour avoir un feedback plus rapide
+* Build
+* Test
+* Livraison
+* Déploiement
 
 ----
 
@@ -74,10 +71,10 @@ Eliminer les activités à faibles valeurs ajoutée et s'améliorer continuellem
 #### Mesure
 
 Tout mesurer, tout le temps
-* l'usage
-* alertes critiques
-* temps de réponse
-* nombre de bugs
+* L'usage
+* Alertes critiques
+* Temps de réponse
+* Nombre de bugs
 
 ----
 
@@ -88,14 +85,14 @@ Partager les rôles, partager les responsabilités, partager les échecs et les 
 
 ----
 
-### Sympa la près, mais c'est quoi le DevOps concrètement ?
+### Sympa la prez', mais c'est quoi le DevOps concrètement ?
 
 * C'est une mentalité avant tout, comme l'agilité
-* Se poser la question d'ou vient mon livrable d'entrée et ou va le livrable que je produis
-* Toujours penser automatisation !
+* Se poser la question d'où vient mon livrable d'entrée et où va le livrable que je produis
+* Toujours penser automatisation!
 * Se poser la question de l'amélioration continue en permanence
 * Dialoguer / se mettre à la place des autres équipes
-* Développer à la cible (même environement)
+* Développer à la cible (même environnement)
 * Réduire le Time To Market (TTM)
 
 ----

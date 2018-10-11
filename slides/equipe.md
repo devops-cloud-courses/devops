@@ -28,14 +28,14 @@
 
 ----
 
-#### Utiliser Git sur des petites projets
+#### Utiliser Git sur des petits projets
 
 On peut travailler sur une seule branche
 
 Problèmes:
-* conflits récurrents si plusieurs personnes commit en même temps
-* séparer les évolution fonctionnelles différentes
-* comment savoir de quelle commit repartir quand il y a un bug en production
+* Conflits récurrents si plusieurs personnes commit en même temps
+* Séparer les évolutions fonctionnelles différentes
+* Comment savoir de quelle commit repartir quand il y a un bug en production
 
 ----
 
@@ -106,7 +106,7 @@ Problèmes:
 
 #### Pull Request / Code Review
 
-* Au lieu de merger un branche dans une autre, faire une demande
+* Au lieu de merger une branche dans une autre, faire une demande de merge
 * D'autres membres de l'équipe vont effectur une revue de code des changements apportés
 * Permet une baisse des bugs détectables à l'oeil nu
 
@@ -132,7 +132,7 @@ Problèmes:
 
 #### Technical Breakfast
 
-* Se réunir autour d'une présentateur qui fait un retour d'expérience sur une techno ou méthodo
+* Se réunir autour d'un présentateur qui fait un retour d'expérience sur une techno ou méthodo
 * Permet de partager le savoir efficacement au sein d'une entreprise
 * Permet au présentateur d'approfondir ses connaissances pour présenter le sujet
 

@@ -19,10 +19,10 @@ Monitoring des applications:
 ### Centralisation des logs
 
 Vue aggrégée des logs permettant de dégager des metrics intérressantes :
-* l'usage
-* alertes critiques
-* temps de réponse
-* nombre de bugs
+* L'usage
+* Alertes critiques
+* Temps de réponse
+* Nombre de bugs
 
 ----
 
@@ -35,7 +35,7 @@ Vue aggrégée des logs permettant de dégager des metrics intérressantes :
 
 ### Infrastructure as Code
 
-> Déployer automatiquement les machines et toutes les dépendances nécéssaires au bon fonctionnement des applicatif
+> Déployer automatiquement les machines et toutes les dépendances nécéssaires au bon fonctionnement des applicatifs
 
 ----
 
@@ -45,5 +45,3 @@ Vue aggrégée des logs permettant de dégager des metrics intérressantes :
 * Centralisation des logs : ElasticSearch, Logstash, Kibana, Filebeat, ...
 * Outils d'infra as code : Terraform, Puppet, Ansible, Chef, Salt, ...
 * Compétences système et réseau avancées
-
-

@@ -7,7 +7,7 @@
 
 ---
 
-### Who we are ?
+### Who we are?
 
 > Laurent Grangeau<br />
 > Cloud Solution Architect @ Sogeti
@@ -16,7 +16,7 @@
 
 ---
 
-### Who we are ?
+### Who we are?
 
 > Arthur Mauvezin<br />
 > DevOps Engineer @ Ouidou Consulting
@@ -30,11 +30,11 @@
 
 ----
 
-### Qui a déjà entendu parler du DevOps ?
+### Qui a déjà entendu parler du DevOps?
 
 ----
 
-### Pourquoi ce cours ?
+### Pourquoi ce cours?
 
 * Des compétences maintenant indispensables
 * Connaissances applicables dans tous les domaines de l'informatique
@@ -42,4 +42,4 @@
 
 ----
 
-### N'hésitez pas à poser vos questions à tout moment !
+### N'hésitez pas à poser vos questions à tout moment!

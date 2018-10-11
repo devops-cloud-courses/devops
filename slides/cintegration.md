@@ -23,7 +23,7 @@
 * C'est à dire : Quasiment tout !
 * Il existe un grand nombre de types de tests différents 
 
-> Tester, c'est mette un coup de tampon sur un livrable
+> Tester, c'est mettre un coup de tampon sur un livrable
 
 ----
 
@@ -46,7 +46,7 @@
 
 * Aussi appelé tests navigateur
 * On simule les input tels qu'ils seront réalisés par les utilisateurs (scénario de Gherkin)
-* Simulation de cliques, d'entrée de charactères dans un champ texte, scrolling, double tap, ...
+* Simulation de cliques, d'entrée de caractères dans un champ texte, scrolling, double tap, ...
 * On valide le retour : l'apparition de la bonne page, de la bonne information, ...
 * Demande des prérequis techniques : id sur chaque élément sélectionnable dans une IHM, ...
 
@@ -92,6 +92,8 @@
 * Remonte des statistiques sur la qualité du code, les vulnérabilités, les bugs possibles
 * Met en avant les problèmes les plus dangereux
 * Permet une vrai introspection sur la qualité générale du code et sur les efforts à faire pour s'approcher de la perfection
+
+----
 
 ### Compétences / Outils
 
