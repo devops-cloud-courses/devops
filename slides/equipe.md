@@ -13,7 +13,7 @@
 
 #### Présentation d'un VCS : Git
 
-* Créé en 2005 par Linux Torvalds
+* Créé en 2005 par Linus Torvalds
 * Le plus populaire
 * Gratuit et open source
 * Système distribué
@@ -141,6 +141,6 @@ Problèmes:
 #### Et pleins d'autres ...
 
 * TDD - Test Driven Development
-* BDD - Behavior Driern Development
+* BDD - Behavior Driven Development
 * Feature Flipping
 * Test A/B
