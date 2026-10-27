@@ -2,47 +2,47 @@
 
 ----
 
-### S'appuie sur le Continuous Deployment
+### Builds on Continuous Deployment
 
 <img src="img/wf-coperations.png" />
 
 ----
 
-### Récolte des metrics
+### Metrics Collection
 
-Monitoring des applications:
-* Ressources (RAM, CPU, Network,...)
-* Etat (UP/Down)
-* Temps de réponse
-
-----
-
-### Centralisation des logs
-
-Vue aggrégée des logs permettant de dégager des metrics intérressantes :
-* L'usage
-* Alertes critiques
-* Temps de réponse
-* Nombre de bugs
+Application monitoring:
+* Resources (RAM, CPU, Network, ...)
+* Health status (UP/Down)
+* Response time
 
 ----
 
-### Scalabilité automatique
+### Log Centralization
 
-* Permettre aux applications de se scaler automatiquement en cas d'un afflux trop important de demandes
-* L'afflux est mesuré grâce aux solutions de collecte de metrics et de centralisation des logs
+Aggregated view of logs to extract valuable metrics:
+* Usage
+* Critical alerts
+* Response time
+* Number of bugs
+
+----
+
+### Auto-Scaling
+
+* Allow applications to scale automatically when facing a sudden surge in traffic
+* Traffic surges are measured through metrics collection and centralized logging solutions
 
 ----
 
 ### Infrastructure as Code
 
-> Déployer automatiquement les machines et toutes les dépendances nécéssaires au bon fonctionnement des applicatifs
+> Automatically provision machines and all dependencies required for applications to run properly
 
 ----
 
-### Compétences / Outils
+### Skills / Tools
 
-* Monitoring : Centreon, Prometheus, InfluxDB, Grafana
-* Centralisation des logs : ElasticSearch, Logstash, Kibana, Filebeat, ...
-* Outils d'infra as code : Terraform, Puppet, Ansible, Chef, Salt, ...
-* Compétences système et réseau avancées
+* Monitoring: Centreon, Prometheus, InfluxDB, Grafana
+* Log centralization: Elasticsearch, Logstash, Kibana, Filebeat, ...
+* Infrastructure as Code tools: Terraform, Puppet, Ansible, Chef, Salt, ...
+* Advanced system and networking skills

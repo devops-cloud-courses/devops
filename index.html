@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -83,7 +83,7 @@
             section.classList.add('center-slide');
             const badgeWrap = document.createElement('div');
             badgeWrap.className = 'section-badge-wrap';
-            badgeWrap.innerHTML = '<span class="section-badge">Formation & Culture</span>';
+            badgeWrap.innerHTML = '<span class="section-badge">Training & Culture</span>';
             section.insertBefore(badgeWrap, h1);
           } else if (h2 && topLists.length === 0 && blockquotes.length === 0 && imgs.length === 0) {
             partCounter += 1;
@@ -91,7 +91,7 @@
             const badgeWrap = document.createElement('div');
             badgeWrap.className = 'section-badge-wrap';
             const num = String(partCounter).padStart(2, '0');
-            badgeWrap.innerHTML = `<span class="section-badge">Partie ${num}</span>`;
+            badgeWrap.innerHTML = `<span class="section-badge">Part ${num}</span>`;
             section.insertBefore(badgeWrap, h2);
           } else if (h2 && h2.textContent.trim().toLowerCase().includes('conclusion')) {
             const badgeWrap = document.createElement('div');

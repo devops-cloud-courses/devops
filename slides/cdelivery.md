@@ -2,44 +2,44 @@
 
 ----
 
-### S'appuie sur la Continuous Integration 
+### Builds on Continuous Integration
 
 <img src="img/wf-cdelivery.png" />
 
 ----
 
-### Qu'est ce que le delivery
+### What is delivery?
 
-> Stocker un livrable potentiellement prêt à aller en production
-
-----
-
-### Tracabilité du livrable
-
-* Le livrable doit pouvoir être tracé à travers les étapes précédentes mais aussi les étapes suivantes
-* A un livrable correspond :
-  * Une demande
-  * N commit
-  * Un tag 
-  * Une version visible par les utilisateurs pour remonter les bugs
+> Storing a deliverable that is potentially ready to go to production
 
 ----
 
-### Problématique de versioning
+### Deliverable Traceability
 
-> Afin de faciliter la tracabilité du livrable, il est important d'avoir un versioning bien pensé
-* Le versioning remet parfois même en question les contenus et les délais de livraison
-* Exemple de versioning : MAJEUR.MINEUR.PATCH_BUILDNUMBER (5.21.12_3)
-
-----
-
-### Mise en prod manuelle
-
-* Le continuous delivery ne réalise pas les mise en production automatiquement
-* Les mises en productions sont lancées manuellement après validation par un humain
+* The deliverable must be traceable across both previous and subsequent stages
+* A deliverable maps to:
+  * A requirement / request
+  * N commits
+  * A tag
+  * A version visible to users so they can report bugs
 
 ----
 
-### Compétences 
+### Versioning Challenges
 
-* Packaging appli : Maven, NPM, MsBuild, Python, Docker, ...
+> To make deliverable traceability easier, it is important to have a well-designed versioning scheme
+* Versioning sometimes even challenges release scope and delivery timelines
+* Versioning example: MAJOR.MINOR.PATCH_BUILDNUMBER (5.21.12_3)
+
+----
+
+### Manual Production Release
+
+* Continuous Delivery does not deploy to production automatically
+* Production deployments are triggered manually after human validation
+
+----
+
+### Skills
+
+* Application packaging: Maven, NPM, MSBuild, Python, Docker, ...

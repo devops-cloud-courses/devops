@@ -1,46 +1,46 @@
-## L'agilité
+## Agility
 
 ----
 
-### Cycle en V / Waterfall
+### V-Model / Waterfall
 
 <img src="img/waterfall.png" />
 
-* Utilisé pendant des années dans une majorité des projets informatiques
-* Cycle de développement long
-* Les livrables ne correspondent pas toujours à ce qui a été demandé
+* Used for years across the majority of IT projects
+* Long development cycle
+* Deliverables do not always match what was requested
 
 ----
 
-### L'agilité par le Scrum
+### Agility through Scrum
 
-* Présenté par **Ken Schwaber** en 1995, publié dans son manifeste en 2001
-* Définit des méthodes et pratiques de pilotage et réalisation de projets
-* Basé sur un système d'**itérations successives**
+* Introduced by **Ken Schwaber** in 1995, published in his manifesto in 2001
+* Defines methods and practices for managing and delivering projects
+* Based on a system of **successive iterations**
 
 <img src="img/agility.png" />
 
 ----
 
-### Piliers de l'agilité
+### Pillars of Agility
 
-* Les **Individus** et leurs interactions plus que les processus et les outils
-* Des logiciels **opérationnels** plus qu'une documentation exhaustive
-* La **collaboration avec les clients** plus que la négociation contractuelle
-* L'**adaptation au changement** plus que le suivi d'un plan
-
-----
-
-### Les rôles de l'agilité
-
-* Le **Product Owner** (PO): vision du produit à réaliser
-* L'équipe de **Développement** : équipe pluridisciplinaire chargée de réaliser les besoins exprimés par le PO
-* Le **Scrum Master** : chargé de faire respecter les principes Scrum au sein de l'équipe
+* **Individuals** and interactions over processes and tools
+* **Working** software over comprehensive documentation
+* **Customer collaboration** over contract negotiation
+* **Responding to change** over following a plan
 
 ----
 
-### Limites de l'agilité
+### Agile Roles
 
-* Seule l'équipe de dev est agile 
-* Quid du déploiement des applications?
-* Ne se concentre que sur la livraison d'un logiciel
+* The **Product Owner** (PO): holds the vision of the product to build
+* The **Development** Team: cross-functional team responsible for delivering the needs expressed by the PO
+* The **Scrum Master**: responsible for ensuring Scrum principles are followed within the team
+
+----
+
+### Limits of Agility
+
+* Only the dev team is agile
+* What about application deployment?
+* Focuses only on software delivery

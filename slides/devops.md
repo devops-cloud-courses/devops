@@ -1,119 +1,119 @@
-## Le DevOps
+## DevOps
 
 ----
 
-### Les acteurs : Devs
-> Toute personne impliquée dans la fabrication du logiciel jusqu’à la livraison de celui-ci
+### The Actors: Devs
+> Anyone involved in building the software up to its delivery
 
-Recherche le changement continu afin de satisfaire le client final (nouvelles fonctionnalités amélioration des performances, expérience utilisateur)
+Seeks continuous change to satisfy the end customer (new features, performance improvements, user experience)
 
 ----
 
-### Les acteurs : Ops
-> Toute personne impliquée dans la maintenance et l’exploitation de la production
+### The Actors: Ops
+> Anyone involved in maintaining and operating production
 
-Recherche la stabilité organisationnelle et de la plateforme de production afin de maintenir un niveau de satisfaction client élevée
+Seeks organizational and production platform stability in order to maintain a high level of customer satisfaction
 
 ----
 
 ### Definition
-> DevOps est la pratique où les ingénieurs de développement (Dev) et d’exploitation (Ops) participent ensemble à l’intégralité du cycle de vie de services : de la conception au support de production en passant par le développement.
+> DevOps is the practice where development (Dev) and operations (Ops) engineers participate together across the entire service lifecycle: from design to production support through development.
 
 ----
 
-### Faire tomber le mur!
+### Tear down the wall!
 
 <img src="https://www.niceideas.ch/roller2/badtrash/mediaresource/ce967df5-4dca-4f37-a480-b683bd742259" />
 
 ----
 
-### Le DevOps s'appuie sur des fondements agiles
+### DevOps builds on Agile foundations
 
 <img src="img/devops.jpg" />
 
 ----
 
-### Keep CALMS : Piliers du DevOps
+### Keep CALMS: Pillars of DevOps
 
 * Culture
-* Automatisation
-* Lean 
-* Mesure
+* Automation
+* Lean
+* Measurement
 * Sharing
 
 ----
 
 #### Culture
 
-> Le DevOps ne résout pas les problèmes d'outils. Il résout les problèmes humains.
+> DevOps does not solve tool problems. It solves human problems.
 
-Tous les membres de l'équipe travaillent **au service du produit**.
+All team members work **in service of the product**.
 
 ----
 
-#### Automatisation
+#### Automation
 
-Tout automatiser pour avoir un feedback plus rapide
+Automate everything to get faster feedback
 * Build
 * Test
-* Livraison
-* Déploiement
+* Delivery
+* Deployment
 
 ----
 
 #### Lean
 
-Eliminer les activités à faibles valeurs ajoutée et s'améliorer continuellement
-* Retrospective agiles
-* Test A/B
-* Assimiler les échecs et tirer des leçons
-* Les applications doivent être **résilientes**
+Eliminate low-value activities and continuously improve
+* Agile retrospectives
+* A/B testing
+* Embrace failures and learn from them
+* Applications must be **resilient**
 
 ----
 
-#### Mesure
+#### Measurement
 
-Tout mesurer, tout le temps
-* L'usage
-* Alertes critiques
-* Temps de réponse
-* Nombre de bugs
+Measure everything, all the time
+* Usage
+* Critical alerts
+* Response time
+* Number of bugs
 
 ----
 
 #### Sharing
 
-Partager les rôles, partager les responsabilités, partager les échecs et les réussites
-> Un dev doit participer à la livraison et au déploiement de son livrable
+Share roles, share responsibilities, share failures and successes
+> A developer must participate in delivering and deploying their deliverable
 
 ----
 
-### Sympa la prez', mais c'est quoi le DevOps concrètement ?
+### Nice presentation, but what is DevOps in practice?
 
-* C'est une mentalité avant tout, comme l'agilité
-* Se poser la question d'où vient mon livrable d'entrée et où va le livrable que je produis
-* Toujours penser automatisation!
-* Se poser la question de l'amélioration continue en permanence
-* Dialoguer / se mettre à la place des autres équipes
-* Développer à la cible (même environnement)
-* Réduire le Time To Market (TTM)
-
-----
-
-### Mise en place du DevOps
-
-* Pas une tâche simple car on ne peut pas imposer une mentalité
-* Une société peut se définir comme DevOps dès qu'elle arrive à adopter cette mentalité
-* Mais la route est longue et quasi infinie
+* It is a mindset above all, just like Agility
+* Ask yourself where your input comes from and where the deliverable you produce goes
+* Always think automation!
+* Constantly ask how to continuously improve
+* Communicate / put yourself in other teams' shoes
+* Develop for the target (same environment)
+* Reduce Time To Market (TTM)
 
 ----
 
-### Comment on fait pour démarrer
+### Implementing DevOps
 
-* Le DevOps peut venir du bas: une équipe peut être moteur 
-* Partir de méthodologies simples à appliquer au sein d'une équipe
-* Mettre en place le déploiement de solutions d'automatisations:
+* Not an easy task because you cannot impose a mindset
+* A company can call itself DevOps as soon as it manages to adopt this mindset
+* But the road is long and almost infinite
+
+----
+
+### How to get started
+
+* DevOps can start from the bottom up: a single team can be the driving force
+* Start with simple methodologies to apply within a team
+* Set up automation solutions:
   * Continuous Integration
   * Continuous Delivery
-  * Continuous Deployement
+  * Continuous Deployment
   * Continuous Operations

@@ -1,58 +1,58 @@
-## Travailler dans une équipe DevOps
+## Working in a DevOps Team
 
 ----
 
-### L'utilisation d'un VCS
+### Using a VCS
 
 * VCS: Version Control System
-* Gestionnaire de source
-* Capable de naviguer à travers un historique de commit
-* Capable de travailler dans des branches séparées
+* Source code manager
+* Able to navigate through commit history
+* Able to work in separate branches
 
 ----
 
-#### Présentation d'un VCS : Git
+#### Introducing a VCS: Git
 
-* Créé en 2005 par Linus Torvalds
-* Le plus populaire
-* Gratuit et open source
-* Système distribué
+* Created in 2005 by Linus Torvalds
+* The most popular
+* Free and open source
+* Distributed system
 
 ----
 
-#### Serveurs Git connus
+#### Well-known Git Servers
 
-* Github
-* Gitlab
+* GitHub
+* GitLab
 * Bitbucket
 
 ----
 
-#### Utiliser Git sur des petits projets
+#### Using Git on small projects
 
-On peut travailler sur une seule branche
+You can work on a single branch
 
-Problèmes:
-* Conflits récurrents si plusieurs personnes commit en même temps
-* Séparer les évolutions fonctionnelles différentes
-* Comment savoir de quelle commit repartir quand il y a un bug en production
+Problems:
+* Recurring conflicts if several people commit at the same time
+* Separating different functional evolutions
+* How to know which commit to branch from when there is a bug in production
 
 ----
 
-### Utiliser Git en équipe : Gitflow
+### Using Git in a team: Gitflow
 
 <img src="https://i.ytimg.com/vi/w2r0oLFtXAw/maxresdefault.jpg" />
 
 ----
 
-### Apprendre à utiliser Git
+### Learn how to use Git
 
-* [Le site officiel](https://git-scm.com/book/en/v2)
-* [Tutoriel pas à pas](https://www.atlassian.com/git/tutorials/what-is-git)
+* [The official website](https://git-scm.com/book/en/v2)
+* [Step-by-step tutorial](https://www.atlassian.com/git/tutorials/what-is-git)
 
 ----
 
-### Pratiques agiles: Les cérémonies
+### Agile practices: Ceremonies
 
 * Sprint Planning
 * Stand-up meeting
@@ -63,35 +63,35 @@ Problèmes:
 
 #### Sprint Planning
 
-* Temps: 4h pour un sprint de 2 semaines
-* Participants: Tout le monde (Dev, PO, SM)
-* But: Velocité, Definition of Done, Liste des tâches à faire sur le sprint
+* Duration: 4 hours for a 2-week sprint
+* Participants: Everyone (Dev, PO, SM)
+* Goal: Velocity, Definition of Done, List of tasks to complete during the sprint
 
-> Vélocité: Valeur indicative de la capacité de l'équipe à réaliser N tâches au cours d'un sprint
+> Velocity: Indicative metric of the team's capacity to complete N tasks during a sprint
 
 ----
 
 #### Stand-up meeting
 
-* Temps: 15 minutes tous les matins
-* Participants: Tout le monde (Dev, PO, SM)
-* But: Discuter des problèmes rencontrés par chacun
+* Duration: 15 minutes every morning
+* Participants: Everyone (Dev, PO, SM)
+* Goal: Discuss blockers and issues encountered by each team member
 
 ----
 
 #### Sprint Review / Demo
 
-* Temps: 1-2h pour un sprint de 2 semaines
-* Participants: Tout le monde (Dev, PO, SM) et toutes personnes intérressées par l'avancement du projet
-* But: Démonstration du produit et récupération du feedback
+* Duration: 1-2 hours for a 2-week sprint
+* Participants: Everyone (Dev, PO, SM) and anyone interested in the project's progress
+* Goal: Product demonstration and feedback collection
 
 ----
 
 #### Sprint retrospective
 
-* Temps: 2h pour un sprint de 2 semaines
-* Participants: Tout le monde (Dev, PO, SM); la présence du PO est optionnelle
-* But: Débrieffer sur ce qui a marché, ce qui n'a pas marché, ce qu'on pourrait améliorer
+* Duration: 2 hours for a 2-week sprint
+* Participants: Everyone (Dev, PO, SM); PO attendance is optional
+* Goal: Debrief on what went well, what didn't go well, and what could be improved
 
 ----
 
@@ -106,41 +106,41 @@ Problèmes:
 
 #### Pull Request / Code Review
 
-* Au lieu de merger une branche dans une autre, faire une demande de merge
-* D'autres membres de l'équipe vont effectur une revue de code des changements apportés
-* Permet une baisse des bugs détectables à l'oeil nu
+* Instead of merging a branch directly into another, open a merge request
+* Other team members review the code changes introduced
+* Reduces bugs that can be spotted by human review
 
 ----
 
 #### Pair programming
 
-* Programmer à deux : Un **driver** et un **navigator**
-* Les rôles sont échangés régulièrement
-* Permet la montée en compétence des personnes impliquées
-* Permet au driver de se concentrer sur les tâches de développement
-* Permet au navigator de se concentrer sur le design et les problèmes de fond
+* Programming in pairs: A **driver** and a **navigator**
+* Roles are swapped regularly
+* Helps everyone involved level up their skills
+* Allows the driver to focus on writing the code
+* Allows the navigator to focus on design and deeper architectural issues
 
 ----
 
 #### Coding Dojo
 
-* Rencontre entre plusieurs personnes souhaitant se confronter à un défi de programmation
-* Le but est de proposer la solution la plus optimisée, choisie par l'ensemble des participants
-* Permet de ne pas déclencher des débats d'idée plus tard sur les choix techniques pris dans le passé
+* Meeting where multiple people tackle a programming challenge together
+* The goal is to come up with the most optimized solution, agreed upon by all participants
+* Prevents endless debates later on about technical choices made in the past
 
 ----
 
 #### Technical Breakfast
 
-* Se réunir autour d'un présentateur qui fait un retour d'expérience sur une techno ou méthodo
-* Permet de partager le savoir efficacement au sein d'une entreprise
-* Permet au présentateur d'approfondir ses connaissances pour présenter le sujet
+* Gather around a speaker sharing feedback and experience on a technology or methodology
+* Helps share knowledge effectively across a company
+* Helps the speaker deepen their own knowledge while preparing the topic
 
 ----
 
-#### Et pleins d'autres ...
+#### And many more...
 
 * TDD - Test Driven Development
 * BDD - Behavior Driven Development
 * Feature Flipping
-* Test A/B
+* A/B Testing

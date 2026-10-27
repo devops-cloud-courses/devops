@@ -2,25 +2,25 @@
 
 ----
 
-### Qui a déjà entendu parler du DevOps?
+### Who has already heard about DevOps?
 
 ----
 
-### Pourquoi ce cours?
+### Why this course?
 
-* Des compétences maintenant indispensables
-* Connaissances applicables dans tous les domaines de l'informatique
-* Connaissances **très** demandées sur le marché
+* Skills that are now essential
+* Knowledge applicable across all areas of IT
+* Skills in **very** high demand on the market
 
 ----
 
-### N'hésitez pas à poser vos questions à tout moment!
+### Feel free to ask questions at any time!
 
 ----
 
 ## How to explore this doc
 
-* This presentation use [Reveal.js framework](https://revealjs.com/#/)
+* This presentation uses the [Reveal.js framework](https://revealjs.com/#/)
 * Press **Esc** to zoom out to all slides or zoom in
 * Press **?** on your keyboard to get navigation help
 
