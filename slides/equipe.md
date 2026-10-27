@@ -41,7 +41,7 @@ Problems:
 
 ### Using Git in a team: Gitflow
 
-<img src="https://i.ytimg.com/vi/w2r0oLFtXAw/maxresdefault.jpg" />
+<img src="img/gitflow.svg?v=2" alt="Gitflow branching model diagram" />
 
 ----
 

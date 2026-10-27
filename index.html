@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/highlight/monokai.css">
 
     <!-- Custom Modern Dark DevOps Theme -->
-    <link rel="stylesheet" href="css/custom.css?v=2">
+    <link rel="stylesheet" href="css/custom.css?v=3">
   </head>
   <body>
     <div class="reveal">
@@ -73,6 +73,8 @@
               img.classList.add('infinity-img');
             } else if (src.includes('pbs.twimg.com') || img.classList.contains('avatar-img')) {
               img.classList.add('avatar-img');
+            } else if (src.includes('.svg')) {
+              img.classList.add('diagram-svg');
             } else {
               img.classList.add('diagram-light');
             }

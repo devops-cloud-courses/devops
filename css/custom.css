@@ -333,11 +333,21 @@
 
 /* Images & Diagrams */
 .reveal img {
-  max-height: 360px;
-  max-width: 92%;
-  border-radius: 12px;
+  max-height: 410px;
+  max-width: 94%;
+  border-radius: 14px;
   margin: 0.35em auto;
   display: block;
+}
+
+.reveal img.diagram-svg {
+  background: transparent !important;
+  padding: 0 !important;
+  border-radius: 16px !important;
+  border: none !important;
+  box-shadow: 0 16px 36px -8px rgba(0, 0, 0, 0.55) !important;
+  width: 100%;
+  max-height: 420px;
 }
 
 .reveal img.diagram-light {
@@ -350,8 +360,9 @@
 
 /* When a slide has both an image and a list, keep the image compact so nothing overflows */
 .reveal section.has-img-and-list img {
-  max-height: 175px !important;
-  margin: 0.25em auto 0.4em auto !important;
+  max-height: 225px !important;
+  width: auto !important;
+  margin: 0.2em auto 0.35em auto !important;
 }
 
 .reveal img.avatar-img {
@@ -368,9 +379,10 @@
 .reveal img.infinity-img {
   background: transparent !important;
   border: none !important;
-  box-shadow: none !important;
-  filter: drop-shadow(0 12px 24px rgba(56, 189, 248, 0.28));
-  max-height: 340px;
+  box-shadow: 0 16px 36px -8px rgba(0, 0, 0, 0.55) !important;
+  border-radius: 16px !important;
+  width: 100%;
+  max-height: 420px;
 }
 
 /* Title social links */

@@ -4,7 +4,7 @@
 
 ### DevOps to infinity!!
 
-<img src="img/devops-infinity-workflow.png" />
+<img src="img/devops-infinity-workflow.svg" alt="DevOps infinity loop workflow diagram" />
 
 ----
 

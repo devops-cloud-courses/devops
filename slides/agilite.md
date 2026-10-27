@@ -4,7 +4,7 @@
 
 ### V-Model / Waterfall
 
-<img src="img/waterfall.png" />
+<img src="img/waterfall.svg" alt="V-Model / Waterfall lifecycle diagram" />
 
 * Used for years across the majority of IT projects
 * Long development cycle
@@ -18,7 +18,7 @@
 * Defines methods and practices for managing and delivering projects
 * Based on a system of **successive iterations**
 
-<img src="img/agility.png" />
+<img src="img/agility.svg" alt="Scrum iterative sprint workflow diagram" />
 
 ----
 

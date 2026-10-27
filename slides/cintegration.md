@@ -2,6 +2,12 @@
 
 ----
 
+### Builds on Agile Development
+
+<img src="img/wf-cintegration.svg" alt="Continuous Integration workflow building on Agile Development" />
+
+----
+
 ### What is integration?
 
 * Bringing together parts developed separately

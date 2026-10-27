@@ -23,13 +23,13 @@ Seeks organizational and production platform stability in order to maintain a hi
 
 ### Tear down the wall!
 
-<img src="https://www.niceideas.ch/roller2/badtrash/mediaresource/ce967df5-4dca-4f37-a480-b683bd742259" />
+<img src="img/wall-of-confusion.svg" alt="The Wall of Confusion between Development and Operations" />
 
 ----
 
 ### DevOps builds on Agile foundations
 
-<img src="img/devops.jpg" />
+<img src="img/devops.svg?v=2" alt="Evolution from Waterfall to Agile to DevOps" />
 
 ----
 

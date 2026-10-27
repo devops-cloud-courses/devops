@@ -4,7 +4,7 @@
 
 ### Builds on Continuous Deployment
 
-<img src="img/wf-coperations.png" />
+<img src="img/wf-coperations.svg" alt="Continuous Operations workflow building on Continuous Deployment" />
 
 ----
 

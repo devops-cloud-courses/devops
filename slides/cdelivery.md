@@ -4,7 +4,7 @@
 
 ### Builds on Continuous Integration
 
-<img src="img/wf-cdelivery.png" />
+<img src="img/wf-cdelivery.svg" alt="Continuous Delivery workflow building on Continuous Integration" />
 
 ----
 

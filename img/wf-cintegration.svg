@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 350" width="100%" height="100%">
+  <defs>
+    <linearGradient id="ci-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.96"/>
+    </linearGradient>
+    <linearGradient id="ci-active" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+    <linearGradient id="ci-highlight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="4" y="4" width="992" height="342" rx="18" fill="url(#ci-bg)" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- 7 Stage Boxes: Plan, Code, Build (active), Test (highlighted), Release, Deploy, Operate (muted) -->
+  <!-- Stage 1: Plan -->
+  <rect x="28" y="28" width="124" height="58" rx="10" fill="url(#ci-active)" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="90" y="63" fill="#ffffff" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="700" text-anchor="middle">Plan</text>
+
+  <!-- Stage 2: Code -->
+  <rect x="164" y="28" width="124" height="58" rx="10" fill="url(#ci-active)" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="226" y="63" fill="#ffffff" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="700" text-anchor="middle">Code</text>
+
+  <!-- Stage 3: Build -->
+  <rect x="300" y="28" width="124" height="58" rx="10" fill="url(#ci-active)" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="362" y="63" fill="#ffffff" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="700" text-anchor="middle">Build</text>
+
+  <!-- Stage 4: Test (Highlighted target stage) -->
+  <rect x="436" y="28" width="124" height="58" rx="10" fill="url(#ci-highlight)" stroke="#ffffff" stroke-width="2"/>
+  <text x="498" y="63" fill="#090d16" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="800" text-anchor="middle">Test</text>
+
+  <!-- Stage 5: Release (Muted) -->
+  <rect x="572" y="28" width="124" height="58" rx="10" fill="#1e293b" stroke="#475569" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <text x="634" y="63" fill="#64748b" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="600" text-anchor="middle">Release</text>
+
+  <!-- Stage 6: Deploy (Muted) -->
+  <rect x="708" y="28" width="124" height="58" rx="10" fill="#1e293b" stroke="#475569" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <text x="770" y="63" fill="#64748b" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="600" text-anchor="middle">Deploy</text>
+
+  <!-- Stage 7: Operate (Muted) -->
+  <rect x="844" y="28" width="128" height="58" rx="10" fill="#1e293b" stroke="#475569" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <text x="908" y="63" fill="#64748b" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="600" text-anchor="middle">Operate</text>
+
+  <!-- Vertical Dashed Guide Lines -->
+  <line x1="424" y1="96" x2="424" y2="195" stroke="#475569" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="560" y1="96" x2="560" y2="305" stroke="#38bdf8" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <!-- Scope 1: Agile Development (Plan -> Build) -->
+  <text x="226" y="158" fill="#94a3b8" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600" text-anchor="middle">Agile Development</text>
+  <line x1="36" y1="176" x2="416" y2="176" stroke="#64748b" stroke-width="3"/>
+  <polygon points="28,176 40,170 40,182" fill="#64748b"/>
+  <polygon points="424,176 412,170 412,182" fill="#64748b"/>
+
+  <!-- Scope 2: Continuous Integration (Plan -> Test) - HIGHLIGHTED -->
+  <rect x="144" y="236" width="300" height="34" rx="17" fill="#38bdf8" fill-opacity="0.15" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="294" y="259" fill="#38bdf8" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="800" text-anchor="middle">Continuous Integration</text>
+  <line x1="36" y1="286" x2="552" y2="286" stroke="#38bdf8" stroke-width="4"/>
+  <polygon points="28,286 42,279 42,293" fill="#38bdf8"/>
+  <polygon points="560,286 546,279 546,293" fill="#38bdf8"/>
+</svg>

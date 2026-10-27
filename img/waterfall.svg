@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 170" width="100%" height="100%">
+  <defs>
+    <linearGradient id="wf-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="wf-design" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="wf-code" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="wf-test" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f43f5e"/>
+      <stop offset="100%" stop-color="#e11d48"/>
+    </linearGradient>
+    <linearGradient id="wf-deploy" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="4" y="4" width="992" height="162" rx="16" fill="url(#wf-bg)" stroke="#334155" stroke-width="1.5"/>
+
+  <text x="36" y="42" fill="#e2e8f0" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="700" letter-spacing="0.02em">Waterfall</text>
+  <text x="964" y="42" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="13" font-weight="500" text-anchor="end">Long Sequential Cycle →</text>
+
+  <!-- Design -->
+  <rect x="36" y="64" width="145" height="72" rx="10" fill="url(#wf-design)"/>
+  <text x="108.5" y="106" fill="#ffffff" font-family="Inter, system-ui, sans-serif" font-size="19" font-weight="700" text-anchor="middle">Design</text>
+
+  <!-- Code -->
+  <rect x="195" y="64" width="465" height="72" rx="10" fill="url(#wf-code)" stroke="#475569" stroke-width="1.5"/>
+  <text x="427.5" y="106" fill="#f8fafc" font-family="Inter, system-ui, sans-serif" font-size="19" font-weight="700" text-anchor="middle">Code</text>
+
+  <!-- Test -->
+  <rect x="674" y="64" width="138" height="72" rx="10" fill="url(#wf-test)"/>
+  <text x="743" y="106" fill="#ffffff" font-family="Inter, system-ui, sans-serif" font-size="19" font-weight="700" text-anchor="middle">Test</text>
+
+  <!-- Deploy -->
+  <rect x="826" y="64" width="138" height="72" rx="10" fill="url(#wf-deploy)"/>
+  <text x="895" y="106" fill="#ffffff" font-family="Inter, system-ui, sans-serif" font-size="19" font-weight="700" text-anchor="middle">Deploy</text>
+</svg>

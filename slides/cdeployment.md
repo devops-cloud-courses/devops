@@ -4,7 +4,7 @@
 
 ### Builds on Continuous Delivery
 
-<img src="img/wf-cdeployment.png" />
+<img src="img/wf-cdeployment.svg" alt="Continuous Deployment workflow building on Continuous Delivery" />
 
 ----
 
