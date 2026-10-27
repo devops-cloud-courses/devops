@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="tp-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.96"/>
+    </linearGradient>
+    <linearGradient id="tp-dev" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#0369a1" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="tp-ops" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#3730a3" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="tp-devops" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#047857" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="tp-warn" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e11d48" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#9f1239" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="tp-amber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d97706" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#92400e" stop-opacity="0.35"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="792" height="292" rx="16" fill="url(#tp-bg)" stroke="#334155" stroke-width="1.5"/>
+
+  <circle cx="215" cy="150" r="95" fill="url(#tp-dev)" stroke="#38bdf8" stroke-width="3"/>
+  <text x="215" y="156" fill="#f8fafc" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="800" text-anchor="middle">Dev</text>
+
+  <line x1="365" y1="45" x2="365" y2="255" stroke="#f43f5e" stroke-width="3" stroke-dasharray="8 6"/>
+
+  <circle cx="565" cy="150" r="105" fill="url(#tp-ops)" stroke="#818cf8" stroke-width="3"/>
+  <text x="615" y="156" fill="#f8fafc" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="800" text-anchor="middle">Ops</text>
+
+  <circle cx="515" cy="150" r="56" fill="url(#tp-warn)" stroke="#fb7185" stroke-width="2.5"/>
+  <text x="515" y="146" fill="#ffffff" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="800" text-anchor="middle">"DevOps"</text>
+  <text x="515" y="165" fill="#fecdd3" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">SysAdmin</text>
+
+</svg>

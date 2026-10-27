@@ -20,3 +20,5 @@
 
 * [12factorapp](https://12factor.net/)
 * [XP from the trenches](https://www.infoq.com/minibooks/scrum-xp-from-the-trenches-2)
+* [DevOps Topologies](https://web.devopstopologies.com/)
+* [DevOps Handbook](https://devops.com/handbook/)

@@ -13,6 +13,6 @@
 ### Who am I?
 
 > **Laurent Grangeau**<br />
-> Cloud Solution Architect @ Sogeti
+> Cloud Solution Architect @ Google
 
 <img src="img/avatar.jpg" alt="Laurent Grangeau" width="170" class="avatar-img" />

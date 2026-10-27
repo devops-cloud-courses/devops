@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="tp-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.96"/>
+    </linearGradient>
+    <linearGradient id="tp-dev" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#0369a1" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="tp-ops" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#3730a3" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="tp-devops" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#047857" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="tp-warn" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e11d48" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#9f1239" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="tp-amber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d97706" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#92400e" stop-opacity="0.35"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="792" height="292" rx="16" fill="url(#tp-bg)" stroke="#334155" stroke-width="1.5"/>
+
+  <rect x="195" y="28" width="410" height="244" rx="120" fill="none" stroke="#34d399" stroke-width="2.5" stroke-dasharray="8 6"/>
+  <circle cx="370" cy="150" r="100" fill="url(#tp-dev)" stroke="#38bdf8" stroke-width="3"/>
+  <circle cx="430" cy="150" r="100" fill="url(#tp-ops)" stroke="#818cf8" stroke-width="3"/>
+  <text x="310" y="156" fill="#f8fafc" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="800" text-anchor="middle">Dev</text>
+  <text x="490" y="156" fill="#f8fafc" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="800" text-anchor="middle">Ops</text>
+  <text x="400" y="155" fill="#6ee7b7" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="800" text-anchor="middle">One Team</text>
+
+</svg>

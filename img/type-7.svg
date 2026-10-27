@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="tp-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.96"/>
+    </linearGradient>
+    <linearGradient id="tp-dev" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#0369a1" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="tp-ops" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#3730a3" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="tp-devops" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#047857" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="tp-warn" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e11d48" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#9f1239" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="tp-amber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d97706" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#92400e" stop-opacity="0.35"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="792" height="292" rx="16" fill="url(#tp-bg)" stroke="#334155" stroke-width="1.5"/>
+
+  <circle cx="175" cy="150" r="88" fill="url(#tp-dev)" stroke="#38bdf8" stroke-width="3"/>
+  <text x="175" y="156" fill="#f8fafc" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="800" text-anchor="middle">Dev</text>
+
+  <!-- Quality Gate / SLA -->
+  <rect x="288" y="122" width="84" height="56" rx="10" fill="#1e293b" stroke="#34d399" stroke-width="2.5"/>
+  <text x="330" y="147" fill="#34d399" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="800" text-anchor="middle">Quality</text>
+  <text x="330" y="165" fill="#6ee7b7" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="700" text-anchor="middle">Gate / SLO</text>
+
+  <circle cx="485" cy="150" r="88" fill="url(#tp-devops)" stroke="#34d399" stroke-width="3"/>
+  <text x="470" y="156" fill="#ffffff" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="800" text-anchor="middle">SRE</text>
+
+  <circle cx="625" cy="150" r="88" fill="url(#tp-ops)" stroke="#818cf8" stroke-width="3"/>
+  <text x="645" y="156" fill="#f8fafc" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="800" text-anchor="middle">Ops</text>
+
+</svg>

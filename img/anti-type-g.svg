@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="tp-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.96"/>
+    </linearGradient>
+    <linearGradient id="tp-dev" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#0369a1" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="tp-ops" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#3730a3" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="tp-devops" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#047857" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="tp-warn" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e11d48" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#9f1239" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="tp-amber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d97706" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#92400e" stop-opacity="0.35"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="792" height="292" rx="16" fill="url(#tp-bg)" stroke="#334155" stroke-width="1.5"/>
+
+  <circle cx="165" cy="150" r="78" fill="url(#tp-warn)" stroke="#fb7185" stroke-width="3"/>
+  <text x="165" y="156" fill="#ffffff" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="800" text-anchor="middle">DBA</text>
+
+  <line x1="275" y1="50" x2="275" y2="250" stroke="#f43f5e" stroke-width="3" stroke-dasharray="8 6"/>
+
+  <circle cx="425" cy="150" r="95" fill="url(#tp-dev)" stroke="#38bdf8" stroke-width="3"/>
+  <circle cx="365" cy="150" r="34" fill="#0284c7" stroke="#7dd3fc" stroke-width="2"/>
+  <text x="365" y="155" fill="#ffffff" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" text-anchor="middle">DB</text>
+  <text x="435" y="156" fill="#f8fafc" font-family="Inter, system-ui, sans-serif" font-size="23" font-weight="800" text-anchor="middle">Dev</text>
+
+  <circle cx="575" cy="150" r="95" fill="url(#tp-ops)" stroke="#818cf8" stroke-width="3"/>
+  <text x="600" y="156" fill="#f8fafc" font-family="Inter, system-ui, sans-serif" font-size="23" font-weight="800" text-anchor="middle">Ops</text>
+
+</svg>
