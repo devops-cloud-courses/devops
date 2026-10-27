@@ -1,17 +1,21 @@
 <!doctype html>
-<html>
+<html lang="fr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <title>DevOps in a nutshell</title>
 
-    <link rel="stylesheet" href="revealjs/dist/reset.css">
-    <link rel="stylesheet" href="revealjs/dist/reveal.css" id="theme">
-    <link rel="stylesheet" href="revealjs/dist/theme/white.css">
+    <!-- Reveal.js Latest (v5) via jsDelivr CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/theme/black.css" id="theme">
 
     <!-- Theme used for syntax highlighting of code -->
-    <link rel="stylesheet" href="revealjs/plugin/highlight/monokai.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/highlight/monokai.css">
+
+    <!-- Custom Modern Dark DevOps Theme -->
+    <link rel="stylesheet" href="css/custom.css">
   </head>
   <body>
     <div class="reveal">
@@ -30,20 +34,26 @@
       </div>
     </div>
 
-    <script src="revealjs/dist/reveal.js"></script>
-    <script src="revealjs/plugin/markdown/markdown.js"></script>
-    <script src="revealjs/plugin/highlight/highlight.js"></script>
-    <script src="revealjs/plugin/notes/notes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/notes/notes.js"></script>
 
     <script>
-        Reveal.initialize({
-            controls: true,
-            progress: true,
-            history: true,
-            center: true,
-
-            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-        });
+      Reveal.initialize({
+        width: 1200,
+        height: 700,
+        margin: 0.08,
+        controls: true,
+        progress: true,
+        history: true,
+        hash: true,
+        center: true,
+        slideNumber: 'c/t',
+        transition: 'slide',
+        backgroundTransition: 'fade',
+        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+      });
     </script>
-</body>
+  </body>
 </html>

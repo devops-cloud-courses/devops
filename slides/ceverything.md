@@ -1,20 +1,28 @@
+<!-- .slide: class="center-slide" -->
+<span class="section-badge">Partie 09</span>
+
 ## Continuous Everything
 
 ----
 
+<!-- .slide: class="center-slide" -->
 ### Le DevOps à l'infini !!
-<img src="img/devops-infinity-workflow.png" style="background:none; border:none; box-shadow:none;"/>
+
+<img src="img/devops-infinity-workflow.png" class="infinity-img" />
 
 ----
 
 ### D'autres sous-domaines peuvent être ajoutés dans le futur
 
+<div class="slide-card fragment fade-up">
 Exemple : Continuous feedback
+</div>
 
 ----
 
 ### Compétences / Outils
 
-* Etre **curieux**
-* S'**adapter** vite
-* **Prendre des informations** partout où vous passez
+* Etre **curieux** <!-- .element: class="fragment fade-up" -->
+* S'**adapter** vite <!-- .element: class="fragment fade-up" -->
+* **Prendre des informations** partout où vous passez <!-- .element: class="fragment fade-up" -->
+<!-- .element: class="grid-3" -->
