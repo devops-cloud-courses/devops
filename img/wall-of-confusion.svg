@@ -1,64 +1,81 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 420" width="940" height="420" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
   <defs>
-    <linearGradient id="wc-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.88"/>
-      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.96"/>
+    <linearGradient id="wallGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#dc2626"/>
     </linearGradient>
-    <linearGradient id="wc-dev" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#1e3a8a" stop-opacity="0.35"/>
-    </linearGradient>
-    <linearGradient id="wc-ops" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#059669" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#064e3b" stop-opacity="0.35"/>
-    </linearGradient>
-    <linearGradient id="wc-brick" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f43f5e"/>
-      <stop offset="100%" stop-color="#be123c"/>
-    </linearGradient>
+    <filter id="wcShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.08"/>
+    </filter>
   </defs>
 
-  <rect x="4" y="4" width="992" height="412" rx="18" fill="url(#wc-bg)" stroke="#334155" stroke-width="1.5"/>
+  <rect width="940" height="420" rx="16" fill="#f8fafc"/>
 
-  <!-- Left Side: DEV -->
-  <rect x="36" y="40" width="360" height="270" rx="16" fill="url(#wc-dev)" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.5"/>
-  <circle cx="216" cy="105" r="36" fill="#0284c7" fill-opacity="0.3" stroke="#38bdf8" stroke-width="2"/>
-  <text x="216" y="114" fill="#38bdf8" font-family="JetBrains Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">&lt;/&gt;</text>
-  <text x="216" y="172" fill="#f8fafc" font-family="Inter, system-ui, sans-serif" font-size="26" font-weight="800" text-anchor="middle">DEV</text>
-  <text x="216" y="204" fill="#38bdf8" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600" text-anchor="middle">Driven by Change &amp; Speed</text>
-  <text x="216" y="242" fill="#cbd5e1" font-family="Inter, system-ui, sans-serif" font-size="14" text-anchor="middle">"It works on my machine!"</text>
-  <text x="216" y="268" fill="#94a3b8" font-family="Inter, system-ui, sans-serif" font-size="14" text-anchor="middle">Ship new features fast</text>
+  <!-- Left Zone: Development -->
+  <rect x="28" y="44" width="330" height="290" rx="18" fill="#eff6ff" stroke="#bfdbfe" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="193" y="80" text-anchor="middle" font-size="20" font-weight="800" fill="#1e40af">DEVELOPMENT (Devs)</text>
+  <text x="193" y="102" text-anchor="middle" font-size="12.5" font-family="'JetBrains Mono', monospace" fill="#2563eb">Goal: Speed &amp; Change</text>
 
-  <!-- Right Side: OPS -->
-  <rect x="604" y="40" width="360" height="270" rx="16" fill="url(#wc-ops)" stroke="#34d399" stroke-width="1.5" stroke-opacity="0.5"/>
-  <circle cx="784" cy="105" r="36" fill="#059669" fill-opacity="0.3" stroke="#34d399" stroke-width="2"/>
-  <text x="784" y="114" fill="#34d399" font-family="JetBrains Mono, monospace" font-size="22" font-weight="700" text-anchor="middle">⚙</text>
-  <text x="784" y="172" fill="#f8fafc" font-family="Inter, system-ui, sans-serif" font-size="26" font-weight="800" text-anchor="middle">OPS</text>
-  <text x="784" y="204" fill="#34d399" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600" text-anchor="middle">Driven by Stability &amp; Uptime</text>
-  <text x="784" y="242" fill="#cbd5e1" font-family="Inter, system-ui, sans-serif" font-size="14" text-anchor="middle">"Don't touch production!"</text>
-  <text x="784" y="268" fill="#94a3b8" font-family="Inter, system-ui, sans-serif" font-size="14" text-anchor="middle">Keep systems reliable &amp; secure</text>
+  <g filter="url(#wcShadow)">
+    <rect x="58" y="124" width="270" height="52" rx="12" fill="#ffffff" stroke="#93c5fd" stroke-width="1.5"/>
+    <text x="193" y="155" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">Ship new features quickly</text>
 
-  <!-- Center: The Wall of Confusion being broken -->
-  <text x="500" y="54" fill="#fb7185" font-family="JetBrains Mono, monospace" font-size="13" font-weight="700" text-anchor="middle" letter-spacing="0.08em">WALL OF CONFUSION</text>
+    <rect x="58" y="190" width="270" height="52" rx="12" fill="#ffffff" stroke="#93c5fd" stroke-width="1.5"/>
+    <text x="193" y="221" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">"It works on my machine!"</text>
 
-  <!-- Bricks stack -->
-  <rect x="445" y="75" width="52" height="26" rx="4" fill="url(#wc-brick)" transform="rotate(-12 471 88)"/>
-  <rect x="505" y="72" width="52" height="26" rx="4" fill="url(#wc-brick)" transform="rotate(15 531 85)"/>
-  <rect x="465" y="112" width="70" height="26" rx="4" fill="url(#wc-brick)" transform="rotate(-4 500 125)"/>
-  <rect x="442" y="148" width="52" height="26" rx="4" fill="url(#wc-brick)"/>
-  <rect x="502" y="148" width="54" height="26" rx="4" fill="url(#wc-brick)" transform="rotate(6 529 161)"/>
-  <rect x="458" y="182" width="84" height="26" rx="4" fill="url(#wc-brick)"/>
-  <rect x="442" y="216" width="52" height="26" rx="4" fill="url(#wc-brick)"/>
-  <rect x="502" y="216" width="54" height="26" rx="4" fill="url(#wc-brick)"/>
-  <rect x="458" y="250" width="84" height="26" rx="4" fill="url(#wc-brick)"/>
+    <rect x="58" y="256" width="270" height="52" rx="12" fill="#ffffff" stroke="#93c5fd" stroke-width="1.5"/>
+    <text x="193" y="287" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">Frequent code releases</text>
+  </g>
 
-  <!-- Curved arrow over the wall -->
-  <path d="M 350 75 Q 500 10 645 75" fill="none" stroke="#fbbf24" stroke-width="3" stroke-dasharray="6 5"/>
-  <polygon points="645,75 633,66 636,80" fill="#fbbf24"/>
+  <!-- Right Zone: Operations -->
+  <rect x="582" y="44" width="330" height="290" rx="18" fill="#f5f3ff" stroke="#ddd6fe" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="747" y="80" text-anchor="middle" font-size="20" font-weight="800" fill="#4338ca">OPERATIONS (Ops)</text>
+  <text x="747" y="102" text-anchor="middle" font-size="12.5" font-family="'JetBrains Mono', monospace" fill="#4f46e5">Goal: Stability &amp; Uptime</text>
 
-  <!-- Bottom DevOps Bridge Banner -->
-  <rect x="140" y="334" width="720" height="54" rx="27" fill="#1e293b" stroke="#818cf8" stroke-width="2"/>
-  <text x="500" y="367" fill="#f8fafc" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" text-anchor="middle">
-    🤝 DevOps: Shared Culture, Automation &amp; End-to-End Ownership
-  </text>
+  <g filter="url(#wcShadow)">
+    <rect x="612" y="124" width="270" height="52" rx="12" fill="#ffffff" stroke="#c4b5fd" stroke-width="1.5"/>
+    <text x="747" y="155" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">Keep production stable (SLAs)</text>
+
+    <rect x="612" y="190" width="270" height="52" rx="12" fill="#ffffff" stroke="#c4b5fd" stroke-width="1.5"/>
+    <text x="747" y="221" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">"Change = Risk of outage!"</text>
+
+    <rect x="612" y="256" width="270" height="52" rx="12" fill="#ffffff" stroke="#c4b5fd" stroke-width="1.5"/>
+    <text x="747" y="287" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">Manual runbooks &amp; firefighting</text>
+  </g>
+
+  <!-- Arc Throwing Deliverable Over the Wall + Explicit Arrowhead -->
+  <path d="M 335 88 Q 470 -12 598 82" fill="none" stroke="#ea580c" stroke-width="3.5" stroke-dasharray="7 5"/>
+  <polygon points="607,89 592,86 600,75" fill="#ea580c"/>
+
+  <g filter="url(#wcShadow)">
+    <rect x="382" y="12" width="176" height="32" rx="16" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+    <text x="470" y="33" text-anchor="middle" font-size="12.5" font-weight="800" fill="#c2410c">Thrown over the wall!</text>
+  </g>
+
+  <!-- Center Brick Wall -->
+  <g filter="url(#wcShadow)">
+    <rect x="420" y="68" width="100" height="266" rx="12" fill="url(#wallGrad)" stroke="#ffffff" stroke-width="3"/>
+    <g stroke="#ffffff" stroke-opacity="0.28" stroke-width="1.5">
+      <line x1="420" y1="112" x2="520" y2="112"/>
+      <line x1="420" y1="156" x2="520" y2="156"/>
+      <line x1="420" y1="200" x2="520" y2="200"/>
+      <line x1="420" y1="244" x2="520" y2="244"/>
+      <line x1="420" y1="288" x2="520" y2="288"/>
+      <line x1="470" y1="68" x2="470" y2="112"/>
+      <line x1="445" y1="112" x2="445" y2="156"/>
+      <line x1="495" y1="112" x2="495" y2="156"/>
+      <line x1="470" y1="156" x2="470" y2="200"/>
+      <line x1="445" y1="200" x2="445" y2="244"/>
+      <line x1="495" y1="200" x2="495" y2="244"/>
+      <line x1="470" y1="244" x2="470" y2="288"/>
+    </g>
+    <rect x="452" y="94" width="36" height="214" rx="18" fill="#991b1b" fill-opacity="0.85"/>
+    <text x="470" y="201" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 470 201)" font-size="14" font-weight="800" letter-spacing="2" fill="#ffffff">WALL OF CONFUSION</text>
+  </g>
+
+  <!-- Bottom DevOps Resolution Banner -->
+  <g filter="url(#wcShadow)">
+    <rect x="170" y="354" width="600" height="44" rx="22" fill="#ecfdf5" stroke="#6ee7b7" stroke-width="2"/>
+    <text x="470" y="381" text-anchor="middle" font-size="14.5" font-weight="800" fill="#065f46">DevOps tears down this wall through shared culture, tooling &amp; responsibility</text>
+  </g>
 </svg>

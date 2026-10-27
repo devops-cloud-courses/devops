@@ -10,16 +10,18 @@
 
 ### Metrics Collection
 
-Application monitoring:
-* Resources (RAM, CPU, Network, ...)
-* Health status (UP/Down)
+> Application monitoring across key operational signals
+
+* Resources (`RAM`, `CPU`, `Network`, ...)
+* Health status (`UP` / `Down`)
 * Response time
 
 ----
 
 ### Log Centralization
 
-Aggregated view of logs to extract valuable metrics:
+> Aggregated view of logs to extract valuable metrics
+
 * Usage
 * Critical alerts
 * Response time
@@ -42,7 +44,7 @@ Aggregated view of logs to extract valuable metrics:
 
 ### Skills / Tools
 
-* Monitoring: Centreon, Prometheus, InfluxDB, Grafana
-* Log centralization: Elasticsearch, Logstash, Kibana, Filebeat, ...
-* Infrastructure as Code tools: Terraform, Puppet, Ansible, Chef, Salt, ...
+* Monitoring: `Centreon`, `Prometheus`, `InfluxDB`, `Grafana`
+* Log centralization: `Elasticsearch`, `Logstash`, `Kibana`, `Filebeat`, ...
+* Infrastructure as Code tools: `Terraform`, `Puppet`, `Ansible`, `Chef`, `Salt`, ...
 * Advanced system and networking skills

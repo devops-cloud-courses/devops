@@ -1,42 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 310" width="800" height="310" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
   <defs>
-    <linearGradient id="tp-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.96"/>
-    </linearGradient>
-    <linearGradient id="tp-dev" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.55"/>
-      <stop offset="100%" stop-color="#0369a1" stop-opacity="0.35"/>
-    </linearGradient>
-    <linearGradient id="tp-ops" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#4f46e5" stop-opacity="0.55"/>
-      <stop offset="100%" stop-color="#3730a3" stop-opacity="0.35"/>
-    </linearGradient>
-    <linearGradient id="tp-devops" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#10b981" stop-opacity="0.55"/>
-      <stop offset="100%" stop-color="#047857" stop-opacity="0.35"/>
-    </linearGradient>
-    <linearGradient id="tp-warn" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#e11d48" stop-opacity="0.55"/>
-      <stop offset="100%" stop-color="#9f1239" stop-opacity="0.35"/>
-    </linearGradient>
-    <linearGradient id="tp-amber" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#d97706" stop-opacity="0.55"/>
-      <stop offset="100%" stop-color="#92400e" stop-opacity="0.35"/>
-    </linearGradient>
+    <filter id="tpShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.07"/>
+    </filter>
   </defs>
-  <rect x="4" y="4" width="792" height="292" rx="16" fill="url(#tp-bg)" stroke="#334155" stroke-width="1.5"/>
+  <rect width="800" height="310" rx="16" fill="#f8fafc"/>
+  <g filter="url(#tpShadow)">
 
-  <circle cx="210" cy="150" r="90" fill="url(#tp-dev)" stroke="#38bdf8" stroke-width="3"/>
-  <text x="210" y="156" fill="#f8fafc" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="800" text-anchor="middle">Dev</text>
+    <circle cx="220" cy="132" r="96" fill="#dbeafe" fill-opacity="0.85" stroke="#2563eb" stroke-width="3"/>
+    <text x="182" y="140" font-size="24" font-weight="800" fill="#1e3a8a" text-anchor="middle">Dev</text>
 
-  <rect x="335" y="105" width="160" height="90" rx="14" fill="url(#tp-amber)" stroke="#fbbf24" stroke-width="2.5"/>
-  <text x="415" y="145" fill="#ffffff" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="800" text-anchor="middle">Cloud / IaaS</text>
-  <text x="415" y="168" fill="#fde68a" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" text-anchor="middle">"NoOps"</text>
-  <line x1="300" y1="150" x2="335" y2="150" stroke="#fbbf24" stroke-width="3"/>
+    <circle cx="276" cy="132" r="35" fill="#ffe4e6" fill-opacity="0.95" stroke="#e11d48" stroke-width="2.5"/>
+    <text x="276" y="137" font-size="13.5" font-weight="800" fill="#881337" text-anchor="middle">DevOps</text>
 
-  <circle cx="630" cy="150" r="72" fill="#1e293b" stroke="#64748b" stroke-width="2.5" stroke-dasharray="7 5"/>
-  <text x="630" y="148" fill="#94a3b8" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="700" text-anchor="middle">Ops</text>
-  <text x="630" y="170" fill="#64748b" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">(Bypassed)</text>
+    <circle cx="580" cy="132" r="96" fill="#e0e7ff" fill-opacity="0.45" stroke="#4f46e5" stroke-width="3" stroke-dasharray="10 7"/>
+    <text x="580" y="140" font-size="24" font-weight="800" fill="#4338ca" text-anchor="middle">Ops</text>
 
+  </g>
+  <g>
+    <circle cx="251.0" cy="280" r="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+    <text x="265.0" y="285" font-size="14" font-weight="700" fill="#334155">Dev</text>
+    <circle cx="376.0" cy="280" r="8" fill="#ffe4e6" stroke="#e11d48" stroke-width="2.5"/>
+    <text x="390.0" y="285" font-size="14" font-weight="700" fill="#334155">DevOps</text>
+    <circle cx="501.0" cy="280" r="8" fill="#e0e7ff" stroke="#4f46e5" stroke-width="2.5"/>
+    <text x="515.0" y="285" font-size="14" font-weight="700" fill="#334155">Ops</text>
+  </g>
 </svg>

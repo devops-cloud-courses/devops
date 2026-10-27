@@ -33,14 +33,14 @@
 
 ----
 
-#### Unit Tests
+### Unit Tests
 
 * Tests aimed at verifying that a single component works on its own
 * These tests can run during the build, or right after the build
 
 ----
 
-#### Integration Tests
+### Integration Tests
 
 * Tests building upon unit tests
 * Ensure that components tested individually work together properly
@@ -48,7 +48,7 @@
 
 ----
 
-#### Functional / End-to-End Tests
+### Functional / End-to-End Tests
 
 * Also called browser tests
 * Simulate inputs just as users would perform them (Gherkin scenarios)
@@ -58,7 +58,7 @@
 
 ----
 
-#### Load Tests
+### Load Tests
 
 * Tests aimed at ensuring application resilience under heavy load
 * Start with simple requests and then move to scenarios representative of real user actions
@@ -68,7 +68,7 @@
 
 ----
 
-#### Security Tests
+### Security Tests
 
 * Test for known vulnerabilities (injections, XSS, ...)
 * Stress the application to see how it responds
@@ -76,14 +76,14 @@
 
 ----
 
-#### Tests: Disadvantages
+### Tests: Disadvantages
 
 * Time-consuming to maintain: test updates must be planned within development cycles
 * Time-consuming to set up: many different technologies exist and benchmarking them takes time
 
 ----
 
-#### Tests: Conclusion
+### Tests: Conclusion
 
 * Tests are not optional
 * Tests drastically reduce the time spent validating a deliverable
@@ -103,18 +103,18 @@
 
 ### Skills / Tools
 
-* Continuous Integration servers: Jenkins, TeamCity, Bamboo, Travis (SaaS), GitLab, ...
-* Scripting: bash, python, powershell, groovy, ...
-* Building: Maven, MSBuild, NPM, ...
-* Dependency management: Maven, NuGet, Pip, Bower, NPM, ...
-* Unit Tests: JUnit, NUnit, unittest, unit-test, ...
+* Continuous Integration servers: `Jenkins`, `TeamCity`, `Bamboo`, `Travis (SaaS)`, `GitLab`, ...
+* Scripting: `bash`, `python`, `powershell`, `groovy`, ...
+* Building: `Maven`, `MSBuild`, `NPM`, ...
+* Dependency management: `Maven`, `NuGet`, `Pip`, `Bower`, `NPM`, ...
+* Unit Tests: `JUnit`, `NUnit`, `unittest`, `unit-test`, ...
 
 ----
 
 ### Skills / Tools (cont.)
 
-* Integration Tests: Failsafe, curl, SoapUI, Postman, ...
-* Functional Tests: Selenium, Cucumber, Test IO, HP UFT, SoapUI, Postman, Ranorex, ...
-* Load Tests: JMeter, Gatling, Locust, ...
-* Security Tests: Netsparker, Acunetix, Metasploit
-* Code Analysis: Sonar, Coverity, Fortify
+* Integration Tests: `Failsafe`, `curl`, `SoapUI`, `Postman`, ...
+* Functional Tests: `Selenium`, `Cucumber`, `Test IO`, `HP UFT`, `SoapUI`, `Postman`, `Ranorex`, ...
+* Load Tests: `JMeter`, `Gatling`, `Locust`, ...
+* Security Tests: `Netsparker`, `Acunetix`, `Metasploit`
+* Code Analysis: `Sonar`, `Coverity`, `Fortify`

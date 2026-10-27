@@ -28,8 +28,9 @@
 ### Versioning Challenges
 
 > To make deliverable traceability easier, it is important to have a well-designed versioning scheme
+
 * Versioning sometimes even challenges release scope and delivery timelines
-* Versioning example: MAJOR.MINOR.PATCH_BUILDNUMBER (5.21.12_3)
+* Versioning example: `MAJOR.MINOR.PATCH_BUILDNUMBER` (`5.21.12_3`)
 
 ----
 
@@ -42,4 +43,4 @@
 
 ### Skills
 
-* Application packaging: Maven, NPM, MSBuild, Python, Docker, ...
+* Application packaging: `Maven`, `NPM`, `MSBuild`, `Python`, `Docker`, ...

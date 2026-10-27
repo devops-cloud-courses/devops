@@ -1,18 +1,28 @@
-# DevOps
-#### In a nutshell
+<div class="hero-slide">
 
-<div class="social-links">
+<h1>DevOps</h1>
+<h4>In a nutshell</h4>
+
+<div class="hero-links">
   <a target="_new" href="https://twitter.com/laurentgrangeau">@laurentgrangeau</a>
+  <span class="sep">|</span>
   <a target="_new" href="https://github.com/laurentgrangeau">github.com/laurentgrangeau</a>
 </div>
 
-<a href="#/2/4" class="btn-primary">How to explore this doc</a>
+<div>
+  <a href="#/2/4" class="btn-primary">How to explore this doc</a>
+</div>
+
+</div>
 
 ---
 
 ### Who am I?
 
-> **Laurent Grangeau**<br />
-> Cloud Solution Architect @ Google
-
-<img src="img/avatar.jpg" alt="Laurent Grangeau" width="170" class="avatar-img" />
+<div class="author-card">
+  <blockquote>
+    <strong>Laurent Grangeau</strong><br />
+    Cloud Solution Architect @ Google
+  </blockquote>
+  <img class="avatar" src="img/avatar.jpg" alt="Laurent Grangeau" />
+</div>

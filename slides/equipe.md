@@ -11,7 +11,7 @@
 
 ----
 
-#### Introducing a VCS: Git
+### Introducing a VCS: Git
 
 * Created in 2005 by Linus Torvalds
 * The most popular
@@ -20,28 +20,27 @@
 
 ----
 
-#### Well-known Git Servers
+### Well-known Git Servers
 
-* GitHub
-* GitLab
-* Bitbucket
+* `GitHub`
+* `GitLab`
+* `Bitbucket`
 
 ----
 
-#### Using Git on small projects
+### Using Git on small projects
 
-You can work on a single branch
+> You can work on a single branch, but this quickly leads to challenges
 
-Problems:
 * Recurring conflicts if several people commit at the same time
 * Separating different functional evolutions
-* How to know which commit to branch from when there is a bug in production
+* Knowing which commit to branch from when there is a bug in production
 
 ----
 
 ### Using Git in a team: Gitflow
 
-<img src="img/gitflow.svg?v=2" alt="Gitflow branching model diagram" />
+<img src="img/gitflow.svg" alt="Gitflow branching model diagram" />
 
 ----
 
@@ -61,7 +60,7 @@ Problems:
 
 ----
 
-#### Sprint Planning
+### Sprint Planning
 
 * Duration: 4 hours for a 2-week sprint
 * Participants: Everyone (Dev, PO, SM)
@@ -71,7 +70,7 @@ Problems:
 
 ----
 
-#### Stand-up meeting
+### Stand-up meeting
 
 * Duration: 15 minutes every morning
 * Participants: Everyone (Dev, PO, SM)
@@ -79,7 +78,7 @@ Problems:
 
 ----
 
-#### Sprint Review / Demo
+### Sprint Review / Demo
 
 * Duration: 1-2 hours for a 2-week sprint
 * Participants: Everyone (Dev, PO, SM) and anyone interested in the project's progress
@@ -87,7 +86,7 @@ Problems:
 
 ----
 
-#### Sprint retrospective
+### Sprint retrospective
 
 * Duration: 2 hours for a 2-week sprint
 * Participants: Everyone (Dev, PO, SM); PO attendance is optional
@@ -104,7 +103,7 @@ Problems:
 
 ----
 
-#### Pull Request / Code Review
+### Pull Request / Code Review
 
 * Instead of merging a branch directly into another, open a merge request
 * Other team members review the code changes introduced
@@ -112,7 +111,7 @@ Problems:
 
 ----
 
-#### Pair programming
+### Pair programming
 
 * Programming in pairs: A **driver** and a **navigator**
 * Roles are swapped regularly
@@ -122,7 +121,7 @@ Problems:
 
 ----
 
-#### Coding Dojo
+### Coding Dojo
 
 * Meeting where multiple people tackle a programming challenge together
 * The goal is to come up with the most optimized solution, agreed upon by all participants
@@ -130,7 +129,7 @@ Problems:
 
 ----
 
-#### Technical Breakfast
+### Technical Breakfast
 
 * Gather around a speaker sharing feedback and experience on a technology or methodology
 * Helps share knowledge effectively across a company
@@ -138,9 +137,9 @@ Problems:
 
 ----
 
-#### And many more...
+### And many more...
 
-* TDD - Test Driven Development
-* BDD - Behavior Driven Development
+* `TDD` - Test Driven Development
+* `BDD` - Behavior Driven Development
 * Feature Flipping
 * A/B Testing

@@ -3,20 +3,23 @@
 ----
 
 ### The Actors: Devs
+
 > Anyone involved in building the software up to its delivery
 
-Seeks continuous change to satisfy the end customer (new features, performance improvements, user experience)
+* Seeks **continuous change** to satisfy the end customer (new features, performance improvements, user experience)
 
 ----
 
 ### The Actors: Ops
+
 > Anyone involved in maintaining and operating production
 
-Seeks organizational and production platform stability in order to maintain a high level of customer satisfaction
+* Seeks **organizational and production platform stability** in order to maintain a high level of customer satisfaction
 
 ----
 
 ### Definition
+
 > DevOps is the practice where development (Dev) and operations (Ops) engineers participate together across the entire service lifecycle: from design to production support through development.
 
 ----
@@ -29,31 +32,32 @@ Seeks organizational and production platform stability in order to maintain a hi
 
 ### DevOps builds on Agile foundations
 
-<img src="img/devops.svg?v=2" alt="Evolution from Waterfall to Agile to DevOps" />
+<img src="img/devops.svg" alt="Evolution from Waterfall to Agile to DevOps" />
 
 ----
 
 ### Keep CALMS: Pillars of DevOps
 
-* Culture
-* Automation
-* Lean
-* Measurement
-* Sharing
+* **C**ulture
+* **A**utomation
+* **L**ean
+* **M**easurement
+* **S**haring
 
 ----
 
-#### Culture
+### Culture
 
 > DevOps does not solve tool problems. It solves human problems.
 
-All team members work **in service of the product**.
+* All team members work **in service of the product**
 
 ----
 
-#### Automation
+### Automation
 
-Automate everything to get faster feedback
+> Automate everything to get faster feedback
+
 * Build
 * Test
 * Delivery
@@ -61,9 +65,10 @@ Automate everything to get faster feedback
 
 ----
 
-#### Lean
+### Lean
 
-Eliminate low-value activities and continuously improve
+> Eliminate low-value activities and continuously improve
+
 * Agile retrospectives
 * A/B testing
 * Embrace failures and learn from them
@@ -71,9 +76,10 @@ Eliminate low-value activities and continuously improve
 
 ----
 
-#### Measurement
+### Measurement
 
-Measure everything, all the time
+> Measure everything, all the time
+
 * Usage
 * Critical alerts
 * Response time
@@ -81,10 +87,12 @@ Measure everything, all the time
 
 ----
 
-#### Sharing
+### Sharing
 
-Share roles, share responsibilities, share failures and successes
 > A developer must participate in delivering and deploying their deliverable
+
+* Share roles and responsibilities
+* Share failures and successes
 
 ----
 

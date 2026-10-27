@@ -4,11 +4,11 @@
 
 ### V-Model / Waterfall
 
-<img src="img/waterfall.svg" alt="V-Model / Waterfall lifecycle diagram" />
-
 * Used for years across the majority of IT projects
 * Long development cycle
 * Deliverables do not always match what was requested
+
+<img src="img/waterfall.svg" alt="V-Model / Waterfall lifecycle diagram" />
 
 ----
 

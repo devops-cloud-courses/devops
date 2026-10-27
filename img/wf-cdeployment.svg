@@ -1,73 +1,56 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 390" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 380" width="960" height="380" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
   <defs>
-    <linearGradient id="cdp-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.96"/>
-    </linearGradient>
-    <linearGradient id="cdp-active" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#0284c7"/>
+    <linearGradient id="plActive" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2563eb"/>
       <stop offset="100%" stop-color="#4f46e5"/>
     </linearGradient>
-    <linearGradient id="cdp-highlight" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#10b981"/>
-      <stop offset="100%" stop-color="#34d399"/>
+    <linearGradient id="plHighlight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#047857"/>
     </linearGradient>
+    <filter id="plShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.08"/>
+    </filter>
   </defs>
 
-  <rect x="4" y="4" width="992" height="382" rx="18" fill="url(#cdp-bg)" stroke="#334155" stroke-width="1.5"/>
+  <rect width="960" height="380" rx="16" fill="#f8fafc"/>
 
-  <!-- 7 Stage Boxes: Plan..Deploy active, Operate muted -->
-  <rect x="28" y="28" width="124" height="56" rx="10" fill="url(#cdp-active)" stroke="#38bdf8" stroke-width="1.5"/>
-  <text x="90" y="62" fill="#ffffff" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="700" text-anchor="middle">Plan</text>
+  <line x1="400" y1="94" x2="400" y2="158" stroke="#94a3b8" stroke-width="2" stroke-dasharray="7 6"/>
+  <line x1="528" y1="94" x2="528" y2="222" stroke="#94a3b8" stroke-width="2" stroke-dasharray="7 6"/>
+  <line x1="656" y1="94" x2="656" y2="286" stroke="#94a3b8" stroke-width="2" stroke-dasharray="7 6"/>
+  <line x1="784" y1="94" x2="784" y2="350" stroke="#059669" stroke-width="2" stroke-dasharray="7 6"/>
 
-  <rect x="164" y="28" width="124" height="56" rx="10" fill="url(#cdp-active)" stroke="#38bdf8" stroke-width="1.5"/>
-  <text x="226" y="62" fill="#ffffff" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="700" text-anchor="middle">Code</text>
+  <g filter="url(#plShadow)">
+    <polygon points="24,24 138,24 156,54 138,84 24,84 42,54" fill="url(#plActive)"/>
+    <text x="90.0" y="60" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Plan</text>
+    <polygon points="152,24 266,24 284,54 266,84 152,84 170,54" fill="url(#plActive)"/>
+    <text x="218.0" y="60" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Code</text>
+    <polygon points="280,24 394,24 412,54 394,84 280,84 298,54" fill="url(#plActive)"/>
+    <text x="346.0" y="60" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Build</text>
+    <polygon points="408,24 522,24 540,54 522,84 408,84 426,54" fill="url(#plActive)"/>
+    <text x="474.0" y="60" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Test</text>
+    <polygon points="536,24 650,24 668,54 650,84 536,84 554,54" fill="url(#plActive)"/>
+    <text x="602.0" y="60" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Release</text>
+    <polygon points="664,24 778,24 796,54 778,84 664,84 682,54" fill="url(#plHighlight)"/>
+    <text x="730.0" y="60" text-anchor="middle" font-size="16" font-weight="800" fill="#ffffff">Deploy</text>
+    <polygon points="792,24 906,24 924,54 906,84 792,84 810,54" fill="#cbd5e1"/>
+    <text x="858.0" y="60" text-anchor="middle" font-size="16" font-weight="700" fill="#475569">Operate</text>
+  </g>
 
-  <rect x="300" y="28" width="124" height="56" rx="10" fill="url(#cdp-active)" stroke="#38bdf8" stroke-width="1.5"/>
-  <text x="362" y="62" fill="#ffffff" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="700" text-anchor="middle">Build</text>
-
-  <rect x="436" y="28" width="124" height="56" rx="10" fill="url(#cdp-active)" stroke="#38bdf8" stroke-width="1.5"/>
-  <text x="498" y="62" fill="#ffffff" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="700" text-anchor="middle">Test</text>
-
-  <rect x="572" y="28" width="124" height="56" rx="10" fill="url(#cdp-active)" stroke="#38bdf8" stroke-width="1.5"/>
-  <text x="634" y="62" fill="#ffffff" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="700" text-anchor="middle">Release</text>
-
-  <!-- Stage 6: Deploy (Highlighted target stage) -->
-  <rect x="708" y="28" width="124" height="56" rx="10" fill="url(#cdp-highlight)" stroke="#ffffff" stroke-width="2"/>
-  <text x="770" y="62" fill="#090d16" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="800" text-anchor="middle">Deploy</text>
-
-  <!-- Stage 7: Operate (Muted) -->
-  <rect x="844" y="28" width="128" height="56" rx="10" fill="#1e293b" stroke="#475569" stroke-width="1.5" stroke-dasharray="4 4"/>
-  <text x="908" y="62" fill="#64748b" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="600" text-anchor="middle">Operate</text>
-
-  <!-- Vertical Dashed Guide Lines -->
-  <line x1="424" y1="94" x2="424" y2="155" stroke="#475569" stroke-width="2" stroke-dasharray="6 6"/>
-  <line x1="560" y1="94" x2="560" y2="220" stroke="#475569" stroke-width="2" stroke-dasharray="6 6"/>
-  <line x1="696" y1="94" x2="696" y2="285" stroke="#475569" stroke-width="2" stroke-dasharray="6 6"/>
-  <line x1="832" y1="94" x2="832" y2="362" stroke="#34d399" stroke-width="2" stroke-dasharray="6 6"/>
-
-  <!-- Scope 1: Agile Development -->
-  <text x="226" y="128" fill="#94a3b8" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="600" text-anchor="middle">Agile Development</text>
-  <line x1="36" y1="142" x2="416" y2="142" stroke="#64748b" stroke-width="3"/>
-  <polygon points="28,142 40,136 40,148" fill="#64748b"/>
-  <polygon points="424,142 412,136 412,148" fill="#64748b"/>
-
-  <!-- Scope 2: Continuous Integration -->
-  <text x="294" y="192" fill="#94a3b8" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="600" text-anchor="middle">Continuous Integration</text>
-  <line x1="36" y1="206" x2="552" y2="206" stroke="#64748b" stroke-width="3"/>
-  <polygon points="28,206 40,200 40,212" fill="#64748b"/>
-  <polygon points="560,206 548,200 548,212" fill="#64748b"/>
-
-  <!-- Scope 3: Continuous Delivery -->
-  <text x="362" y="256" fill="#cbd5e1" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="600" text-anchor="middle">Continuous Delivery</text>
-  <line x1="36" y1="270" x2="688" y2="270" stroke="#94a3b8" stroke-width="3"/>
-  <polygon points="28,270 40,264 40,276" fill="#94a3b8"/>
-  <polygon points="696,270 684,264 684,276" fill="#94a3b8"/>
-
-  <!-- Scope 4: Continuous Deployment - HIGHLIGHTED -->
-  <rect x="270" y="304" width="320" height="32" rx="16" fill="#34d399" fill-opacity="0.15" stroke="#34d399" stroke-width="1.5"/>
-  <text x="430" y="326" fill="#34d399" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="800" text-anchor="middle">Continuous Deployment</text>
-  <line x1="36" y1="350" x2="824" y2="350" stroke="#34d399" stroke-width="4"/>
-  <polygon points="28,350 42,343 42,357" fill="#34d399"/>
-  <polygon points="832,350 818,343 818,357" fill="#34d399"/>
+  <text x="214.0" y="129" text-anchor="middle" font-size="15" font-weight="700" fill="#334155">Agile Development</text>
+  <line x1="38" y1="140" x2="382" y2="140" stroke="#64748b" stroke-width="2.5"/>
+  <polygon points="28,140 39,134.5 39,145.5" fill="#64748b"/>
+  <polygon points="392,140 381,134.5 381,145.5" fill="#64748b"/>
+  <text x="278.0" y="193" text-anchor="middle" font-size="15" font-weight="700" fill="#334155">Continuous Integration</text>
+  <line x1="38" y1="204" x2="510" y2="204" stroke="#64748b" stroke-width="2.5"/>
+  <polygon points="28,204 39,198.5 39,209.5" fill="#64748b"/>
+  <polygon points="520,204 509,198.5 509,209.5" fill="#64748b"/>
+  <text x="342.0" y="257" text-anchor="middle" font-size="15" font-weight="700" fill="#334155">Continuous Delivery</text>
+  <line x1="38" y1="268" x2="638" y2="268" stroke="#64748b" stroke-width="2.5"/>
+  <polygon points="28,268 39,262.5 39,273.5" fill="#64748b"/>
+  <polygon points="648,268 637,262.5 637,273.5" fill="#64748b"/>
+  <text x="406.0" y="321" text-anchor="middle" font-size="16" font-weight="800" fill="#065f46">Continuous Deployment</text>
+  <line x1="38" y1="332" x2="766" y2="332" stroke="#059669" stroke-width="3"/>
+  <polygon points="28,332 39,326.5 39,337.5" fill="#059669"/>
+  <polygon points="776,332 765,326.5 765,337.5" fill="#059669"/>
 </svg>

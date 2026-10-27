@@ -6,16 +6,21 @@
 
     <title>DevOps in a nutshell</title>
 
-    <!-- Reveal.js Latest (v5) via jsDelivr CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reset.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/theme/black.css" id="theme">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Reveal.js 5.1.0 Core & Theme Styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css" id="theme">
 
     <!-- Theme used for syntax highlighting of code -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/highlight/monokai.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/monokai.css">
 
-    <!-- Custom Modern Dark DevOps Theme -->
-    <link rel="stylesheet" href="css/custom.css?v=3">
+    <!-- Custom Modern Light Theme -->
+    <link rel="stylesheet" href="css/custom.css">
   </head>
   <body>
     <div class="reveal">
@@ -36,15 +41,15 @@
       </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/markdown/markdown.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/highlight/highlight.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/notes/notes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
 
     <script>
       Reveal.initialize({
-        width: 1280,
-        height: 740,
+        width: 1200,
+        height: 700,
         margin: 0.06,
         controls: true,
         progress: true,
@@ -53,89 +58,7 @@
         center: true,
         slideNumber: 'c/t',
         transition: 'slide',
-        backgroundTransition: 'fade',
         plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-      }).then(() => {
-        let partCounter = 0;
-
-        document.querySelectorAll('.reveal .slides section').forEach((section) => {
-          // Skip vertical stack wrapper sections
-          if (section.querySelector('section')) return;
-
-          const h1 = section.querySelector('h1');
-          const h2 = section.querySelector('h2');
-          const imgs = Array.from(section.querySelectorAll('img'));
-          const topLists = Array.from(section.querySelectorAll(':scope > ul'));
-          const blockquotes = Array.from(section.querySelectorAll('blockquote'));
-
-          // Classify images
-          imgs.forEach((img) => {
-            const src = img.getAttribute('src') || '';
-            if (src.includes('devops-infinity-workflow')) {
-              img.classList.add('infinity-img');
-            } else if (src.includes('avatar') || img.classList.contains('avatar-img')) {
-              img.classList.add('avatar-img');
-            } else if (src.includes('.svg')) {
-              img.classList.add('diagram-svg');
-            } else {
-              img.classList.add('diagram-light');
-            }
-          });
-
-          // Add badges & center cover/title slides
-          if (h1) {
-            section.classList.add('center-slide');
-            const badgeWrap = document.createElement('div');
-            badgeWrap.className = 'section-badge-wrap';
-            badgeWrap.innerHTML = '<span class="section-badge">Training & Culture</span>';
-            section.insertBefore(badgeWrap, h1);
-          } else if (h2 && topLists.length === 0 && blockquotes.length === 0 && imgs.length === 0) {
-            partCounter += 1;
-            section.classList.add('center-slide');
-            const badgeWrap = document.createElement('div');
-            badgeWrap.className = 'section-badge-wrap';
-            const num = String(partCounter).padStart(2, '0');
-            badgeWrap.innerHTML = `<span class="section-badge">Part ${num}</span>`;
-            section.insertBefore(badgeWrap, h2);
-          } else if (h2 && h2.textContent.trim().toLowerCase().includes('conclusion')) {
-            const badgeWrap = document.createElement('div');
-            badgeWrap.className = 'section-badge-wrap';
-            badgeWrap.innerHTML = '<span class="section-badge">Conclusion</span>';
-            section.insertBefore(badgeWrap, h2);
-          }
-
-          // Center question-only slides, profile slide, and diagram-only slides
-          if (topLists.length === 0 && blockquotes.length === 0) {
-            section.classList.add('center-slide');
-          } else if (imgs.some((img) => img.classList.contains('avatar-img'))) {
-            section.classList.add('center-slide');
-          }
-
-          if (imgs.length > 0 && topLists.length > 0) {
-            section.classList.add('has-img-and-list');
-          }
-
-          // Enhance top-level lists into grids or compact lists
-          topLists.forEach((ul) => {
-            const items = Array.from(ul.children).filter((el) => el.tagName === 'LI');
-            const hasNestedList = items.some((li) => li.querySelector('ul, ol'));
-            const maxLen = Math.max(0, ...items.map((li) => (li.textContent || '').trim().length));
-
-            if (items.length === 5 && maxLen <= 20 && !hasNestedList) {
-              ul.classList.add('grid-5');
-            } else if (items.length === 3 && maxLen <= 35 && !hasNestedList && imgs.length === 0) {
-              ul.classList.add('grid-3');
-            } else if (items.length === 4 && maxLen <= 65 && !hasNestedList && imgs.length === 0) {
-              ul.classList.add('grid-2');
-            } else if (items.length === 2 && maxLen <= 45 && !hasNestedList && imgs.length === 0) {
-              ul.classList.add('grid-2');
-            } else if (items.length >= 5) {
-              ul.classList.add('compact-list');
-            }
-          });
-        });
-
-        Reveal.layout();
       });
     </script>
   </body>

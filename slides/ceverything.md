@@ -10,7 +10,7 @@
 
 ### Other sub-domains may be added in the future
 
-Example: Continuous Feedback
+* Example: **Continuous Feedback**
 
 ----
 
