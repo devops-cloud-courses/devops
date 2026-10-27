@@ -15,4 +15,4 @@
 > **Laurent Grangeau**<br />
 > Cloud Solution Architect @ Sogeti
 
-<img src="https://pbs.twimg.com/profile_images/1007639151812988929/ln3iUxxF_400x400.jpg" width="170" class="avatar-img" />
+<img src="img/avatar.jpg" alt="Laurent Grangeau" width="170" class="avatar-img" />
