@@ -1,18 +1,31 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="55 20 850 420" width="850" height="420" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
   <defs>
+    <pattern id="infDots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="1.2" fill="#cbd5e1" fill-opacity="0.55"/>
+    </pattern>
     <filter id="infShadow" x="-10%" y="-10%" width="120%" height="125%">
-      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#0f172a" flood-opacity="0.10"/>
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#0f172a" flood-opacity="0.12"/>
+    </filter>
+    <filter id="hubShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#0f172a" flood-opacity="0.06"/>
     </filter>
   </defs>
 
-  <rect x="55" y="20" width="850" height="420" rx="16" fill="#f8fafc"/>
+  <rect x="55" y="20" width="850" height="420" rx="18" fill="#f8fafc"/>
+  <rect x="55" y="20" width="850" height="420" rx="18" fill="url(#infDots)"/>
 
-  <!-- Subtle DEV / OPS Center Labels -->
-  <text x="270" y="226" text-anchor="middle" font-size="30" font-weight="800" fill="#cbd5e1" letter-spacing="2">DEV</text>
-  <text x="270" y="250" text-anchor="middle" font-size="12" font-family="'JetBrains Mono', monospace" font-weight="700" fill="#94a3b8">Build &amp; Verify</text>
+  <!-- Styled DEV / OPS Center Hub Badges -->
+  <g filter="url(#hubShadow)">
+    <circle cx="270" cy="230" r="76" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <circle cx="270" cy="230" r="66" fill="none" stroke="#cbd5e1" stroke-width="1.2" stroke-dasharray="4 4"/>
+    <text x="270" y="226" text-anchor="middle" font-size="28" font-weight="800" fill="#0c3c54" letter-spacing="2">DEV</text>
+    <text x="270" y="248" text-anchor="middle" font-size="11.5" font-family="'JetBrains Mono', monospace" font-weight="700" fill="#64748b">Build &amp; Verify</text>
 
-  <text x="690" y="226" text-anchor="middle" font-size="30" font-weight="800" fill="#cbd5e1" letter-spacing="2">OPS</text>
-  <text x="690" y="250" text-anchor="middle" font-size="12" font-family="'JetBrains Mono', monospace" font-weight="700" fill="#94a3b8">Run &amp; Observe</text>
+    <circle cx="690" cy="230" r="76" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <circle cx="690" cy="230" r="66" fill="none" stroke="#cbd5e1" stroke-width="1.2" stroke-dasharray="4 4"/>
+    <text x="690" y="226" text-anchor="middle" font-size="28" font-weight="800" fill="#0e9cc2" letter-spacing="2">OPS</text>
+    <text x="690" y="248" text-anchor="middle" font-size="11.5" font-family="'JetBrains Mono', monospace" font-weight="700" fill="#64748b">Run &amp; Observe</text>
+  </g>
 
   <g filter="url(#infShadow)" fill="none">
     <!-- DEPLOY -->

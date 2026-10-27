@@ -1,5 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 420" width="940" height="420" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 430" width="940" height="430" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
   <defs>
+    <pattern id="wcDots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="1.2" fill="#cbd5e1" fill-opacity="0.55"/>
+    </pattern>
     <linearGradient id="wallGrad" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#ea580c"/>
       <stop offset="100%" stop-color="#dc2626"/>
@@ -9,73 +12,74 @@
     </filter>
   </defs>
 
-  <rect width="940" height="420" rx="16" fill="#f8fafc"/>
+  <rect width="940" height="430" rx="18" fill="#f8fafc"/>
+  <rect width="940" height="430" rx="18" fill="url(#wcDots)"/>
 
   <!-- Left Zone: Development -->
-  <rect x="28" y="44" width="330" height="290" rx="18" fill="#eff6ff" stroke="#bfdbfe" stroke-width="2" stroke-dasharray="6 4"/>
-  <text x="193" y="80" text-anchor="middle" font-size="20" font-weight="800" fill="#1e40af">DEVELOPMENT (Devs)</text>
-  <text x="193" y="102" text-anchor="middle" font-size="12.5" font-family="'JetBrains Mono', monospace" fill="#2563eb">Goal: Speed &amp; Change</text>
+  <rect x="28" y="62" width="330" height="284" rx="18" fill="#eff6ff" stroke="#93c5fd" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="193" y="96" text-anchor="middle" font-size="20" font-weight="800" fill="#1e40af">DEVELOPMENT (Devs)</text>
+  <text x="193" y="117" text-anchor="middle" font-size="12.5" font-family="'JetBrains Mono', monospace" font-weight="600" fill="#2563eb">Goal: Speed &amp; Change</text>
 
   <g filter="url(#wcShadow)">
-    <rect x="58" y="124" width="270" height="52" rx="12" fill="#ffffff" stroke="#93c5fd" stroke-width="1.5"/>
-    <text x="193" y="155" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">Ship new features quickly</text>
+    <rect x="58" y="136" width="270" height="50" rx="12" fill="#ffffff" stroke="#93c5fd" stroke-width="1.5"/>
+    <text x="193" y="166" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">Ship new features quickly</text>
 
-    <rect x="58" y="190" width="270" height="52" rx="12" fill="#ffffff" stroke="#93c5fd" stroke-width="1.5"/>
-    <text x="193" y="221" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">"It works on my machine!"</text>
+    <rect x="58" y="200" width="270" height="50" rx="12" fill="#ffffff" stroke="#93c5fd" stroke-width="1.5"/>
+    <text x="193" y="230" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">"It works on my machine!"</text>
 
-    <rect x="58" y="256" width="270" height="52" rx="12" fill="#ffffff" stroke="#93c5fd" stroke-width="1.5"/>
-    <text x="193" y="287" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">Frequent code releases</text>
+    <rect x="58" y="264" width="270" height="50" rx="12" fill="#ffffff" stroke="#93c5fd" stroke-width="1.5"/>
+    <text x="193" y="294" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">Frequent code releases</text>
   </g>
 
   <!-- Right Zone: Operations -->
-  <rect x="582" y="44" width="330" height="290" rx="18" fill="#f5f3ff" stroke="#ddd6fe" stroke-width="2" stroke-dasharray="6 4"/>
-  <text x="747" y="80" text-anchor="middle" font-size="20" font-weight="800" fill="#4338ca">OPERATIONS (Ops)</text>
-  <text x="747" y="102" text-anchor="middle" font-size="12.5" font-family="'JetBrains Mono', monospace" fill="#4f46e5">Goal: Stability &amp; Uptime</text>
+  <rect x="582" y="62" width="330" height="284" rx="18" fill="#f5f3ff" stroke="#c4b5fd" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="747" y="96" text-anchor="middle" font-size="20" font-weight="800" fill="#4338ca">OPERATIONS (Ops)</text>
+  <text x="747" y="117" text-anchor="middle" font-size="12.5" font-family="'JetBrains Mono', monospace" font-weight="600" fill="#4f46e5">Goal: Stability &amp; Uptime</text>
 
   <g filter="url(#wcShadow)">
-    <rect x="612" y="124" width="270" height="52" rx="12" fill="#ffffff" stroke="#c4b5fd" stroke-width="1.5"/>
-    <text x="747" y="155" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">Keep production stable (SLAs)</text>
+    <rect x="612" y="136" width="270" height="50" rx="12" fill="#ffffff" stroke="#c4b5fd" stroke-width="1.5"/>
+    <text x="747" y="166" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">Keep production stable (SLAs)</text>
 
-    <rect x="612" y="190" width="270" height="52" rx="12" fill="#ffffff" stroke="#c4b5fd" stroke-width="1.5"/>
-    <text x="747" y="221" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">"Change = Risk of outage!"</text>
+    <rect x="612" y="200" width="270" height="50" rx="12" fill="#ffffff" stroke="#c4b5fd" stroke-width="1.5"/>
+    <text x="747" y="230" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">"Change = Risk of outage!"</text>
 
-    <rect x="612" y="256" width="270" height="52" rx="12" fill="#ffffff" stroke="#c4b5fd" stroke-width="1.5"/>
-    <text x="747" y="287" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">Manual runbooks &amp; firefighting</text>
+    <rect x="612" y="264" width="270" height="50" rx="12" fill="#ffffff" stroke="#c4b5fd" stroke-width="1.5"/>
+    <text x="747" y="294" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">Manual runbooks &amp; firefighting</text>
   </g>
 
-  <!-- Arc Throwing Deliverable Over the Wall + Explicit Arrowhead -->
-  <path d="M 335 88 Q 470 -12 598 82" fill="none" stroke="#ea580c" stroke-width="3.5" stroke-dasharray="7 5"/>
-  <polygon points="607,89 592,86 600,75" fill="#ea580c"/>
+  <!-- Unclipped Arc Throwing Deliverable Over the Wall + Arrowhead -->
+  <path d="M 338 96 Q 470 22 596 90" fill="none" stroke="#ea580c" stroke-width="3.5" stroke-dasharray="7 5"/>
+  <polygon points="606,96 590,94 597,83" fill="#ea580c"/>
 
   <g filter="url(#wcShadow)">
-    <rect x="382" y="12" width="176" height="32" rx="16" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
-    <text x="470" y="33" text-anchor="middle" font-size="12.5" font-weight="800" fill="#c2410c">Thrown over the wall!</text>
+    <rect x="378" y="14" width="184" height="32" rx="16" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+    <text x="470" y="35" text-anchor="middle" font-size="12.5" font-weight="800" fill="#c2410c">Thrown over the wall!</text>
   </g>
 
   <!-- Center Brick Wall -->
   <g filter="url(#wcShadow)">
-    <rect x="420" y="68" width="100" height="266" rx="12" fill="url(#wallGrad)" stroke="#ffffff" stroke-width="3"/>
+    <rect x="420" y="82" width="100" height="264" rx="12" fill="url(#wallGrad)" stroke="#ffffff" stroke-width="3"/>
     <g stroke="#ffffff" stroke-opacity="0.28" stroke-width="1.5">
-      <line x1="420" y1="112" x2="520" y2="112"/>
-      <line x1="420" y1="156" x2="520" y2="156"/>
-      <line x1="420" y1="200" x2="520" y2="200"/>
-      <line x1="420" y1="244" x2="520" y2="244"/>
-      <line x1="420" y1="288" x2="520" y2="288"/>
-      <line x1="470" y1="68" x2="470" y2="112"/>
-      <line x1="445" y1="112" x2="445" y2="156"/>
-      <line x1="495" y1="112" x2="495" y2="156"/>
-      <line x1="470" y1="156" x2="470" y2="200"/>
-      <line x1="445" y1="200" x2="445" y2="244"/>
-      <line x1="495" y1="200" x2="495" y2="244"/>
-      <line x1="470" y1="244" x2="470" y2="288"/>
+      <line x1="420" y1="126" x2="520" y2="126"/>
+      <line x1="420" y1="170" x2="520" y2="170"/>
+      <line x1="420" y1="214" x2="520" y2="214"/>
+      <line x1="420" y1="258" x2="520" y2="258"/>
+      <line x1="420" y1="302" x2="520" y2="302"/>
+      <line x1="470" y1="82" x2="470" y2="126"/>
+      <line x1="445" y1="126" x2="445" y2="170"/>
+      <line x1="495" y1="126" x2="495" y2="170"/>
+      <line x1="470" y1="170" x2="470" y2="214"/>
+      <line x1="445" y1="214" x2="445" y2="258"/>
+      <line x1="495" y1="214" x2="495" y2="258"/>
+      <line x1="470" y1="258" x2="470" y2="302"/>
     </g>
-    <rect x="452" y="94" width="36" height="214" rx="18" fill="#991b1b" fill-opacity="0.85"/>
-    <text x="470" y="201" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 470 201)" font-size="14" font-weight="800" letter-spacing="2" fill="#ffffff">WALL OF CONFUSION</text>
+    <rect x="452" y="106" width="36" height="216" rx="18" fill="#991b1b" fill-opacity="0.88"/>
+    <text x="470" y="214" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 470 214)" font-size="14" font-weight="800" letter-spacing="2" fill="#ffffff">WALL OF CONFUSION</text>
   </g>
 
   <!-- Bottom DevOps Resolution Banner -->
   <g filter="url(#wcShadow)">
-    <rect x="170" y="354" width="600" height="44" rx="22" fill="#ecfdf5" stroke="#6ee7b7" stroke-width="2"/>
-    <text x="470" y="381" text-anchor="middle" font-size="14.5" font-weight="800" fill="#065f46">DevOps tears down this wall through shared culture, tooling &amp; responsibility</text>
+    <rect x="160" y="364" width="620" height="44" rx="22" fill="#ecfdf5" stroke="#6ee7b7" stroke-width="2"/>
+    <text x="470" y="391" text-anchor="middle" font-size="14.5" font-weight="800" fill="#065f46">DevOps tears down this wall through shared culture, tooling &amp; responsibility</text>
   </g>
 </svg>

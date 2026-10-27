@@ -1,88 +1,139 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 385" width="960" height="385" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 396" width="960" height="396" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
   <defs>
-    <filter id="dvShadow" x="-10%" y="-10%" width="120%" height="125%">
-      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.08"/>
+    <pattern id="dotGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="1.2" fill="#cbd5e1" fill-opacity="0.55"/>
+    </pattern>
+    <linearGradient id="gDesign" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="gCode" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="gTest" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f43f5e"/>
+      <stop offset="100%" stop-color="#dc2626"/>
+    </linearGradient>
+    <linearGradient id="gDeploy" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <filter id="dvShadow" x="-8%" y="-8%" width="116%" height="124%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.10"/>
+    </filter>
+    <filter id="laneShadow" x="-4%" y="-6%" width="108%" height="116%">
+      <feDropShadow dx="0" dy="2" stdDeviation="5" flood-color="#0f172a" flood-opacity="0.05"/>
     </filter>
   </defs>
-  <rect width="960" height="385" rx="16" fill="#f8fafc"/>
+  <rect width="960" height="396" rx="18" fill="#f8fafc"/>
+  <rect width="960" height="396" rx="18" fill="url(#dotGrid)"/>
 
   <!-- Row 1: Waterfall -->
-  <text x="32" y="42" font-size="18" font-weight="800" fill="#1e293b">Waterfall</text>
+  <g filter="url(#laneShadow)">
+    <rect x="18" y="18" width="924" height="112" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  </g>
+  <rect x="34" y="38" width="128" height="72" rx="12" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="98" y="70" text-anchor="middle" font-size="17" font-weight="800" fill="#0f172a">Waterfall</text>
+  <text x="98" y="91" text-anchor="middle" font-size="11" font-family="'JetBrains Mono', monospace" font-weight="600" fill="#64748b">Sequential</text>
+
   <g filter="url(#dvShadow)">
-    <rect x="32" y="56" width="175" height="64" rx="8" fill="#0891b2"/>
-    <text x="119.5" y="94" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Design</text>
+    <rect x="178" y="42" width="154" height="64" rx="10" fill="url(#gDesign)"/>
+    <text x="255" y="80" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Design</text>
 
-    <rect x="219" y="56" width="352" height="64" rx="8" fill="#1e293b"/>
-    <text x="395" y="94" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Code</text>
+    <rect x="342" y="42" width="276" height="64" rx="10" fill="url(#gCode)"/>
+    <text x="480" y="80" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Code</text>
 
-    <rect x="583" y="56" width="165" height="64" rx="8" fill="#dc2626"/>
-    <text x="665.5" y="94" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Test</text>
+    <rect x="628" y="42" width="144" height="64" rx="10" fill="url(#gTest)"/>
+    <text x="700" y="80" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Test</text>
 
-    <rect x="760" y="56" width="168" height="64" rx="8" fill="#10b981"/>
-    <text x="844" y="94" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Deploy</text>
+    <rect x="782" y="42" width="144" height="64" rx="10" fill="url(#gDeploy)"/>
+    <text x="854" y="80" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Deploy</text>
   </g>
   <!-- Row 2: Agile -->
-  <text x="32" y="156" font-size="18" font-weight="800" fill="#1e293b">Agile</text>
+  <g filter="url(#laneShadow)">
+    <rect x="18" y="142" width="924" height="112" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  </g>
+  <rect x="34" y="162" width="128" height="72" rx="12" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="98" y="194" text-anchor="middle" font-size="17" font-weight="800" fill="#1e40af">Agile</text>
+  <text x="98" y="215" text-anchor="middle" font-size="11" font-family="'JetBrains Mono', monospace" font-weight="600" fill="#2563eb">Iterative</text>
+
+  <!-- Sprint Group Containers -->
+  <rect x="174" y="156" width="190" height="84" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <rect x="374" y="156" width="190" height="84" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <rect x="574" y="156" width="190" height="84" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2" stroke-dasharray="4 3"/>
+
   <g filter="url(#dvShadow)">
     <!-- Agile Iteration 1 -->
-    <rect x="32" y="170" width="72" height="64" rx="8" fill="#0891b2"/>
-    <text x="68" y="207" text-anchor="middle" font-size="13.5" font-weight="700" fill="#ffffff">Design</text>
-    <rect x="110" y="170" width="72" height="64" rx="8" fill="#1e293b"/>
-    <text x="146" y="207" text-anchor="middle" font-size="13.5" font-weight="700" fill="#ffffff">Code</text>
-    <rect x="188" y="170" width="72" height="64" rx="8" fill="#dc2626"/>
-    <text x="224" y="207" text-anchor="middle" font-size="13.5" font-weight="700" fill="#ffffff">Test</text>
+    <rect x="180" y="166" width="56" height="64" rx="8" fill="url(#gDesign)"/>
+    <text x="208" y="203" text-anchor="middle" font-size="12.5" font-weight="700" fill="#ffffff">Design</text>
+    <rect x="241" y="166" width="56" height="64" rx="8" fill="url(#gCode)"/>
+    <text x="269" y="203" text-anchor="middle" font-size="12.5" font-weight="700" fill="#ffffff">Code</text>
+    <rect x="302" y="166" width="56" height="64" rx="8" fill="url(#gTest)"/>
+    <text x="330" y="203" text-anchor="middle" font-size="12.5" font-weight="700" fill="#ffffff">Test</text>
 
     <!-- Agile Iteration 2 -->
-    <rect x="274" y="170" width="72" height="64" rx="8" fill="#0891b2"/>
-    <text x="310" y="207" text-anchor="middle" font-size="13.5" font-weight="700" fill="#ffffff">Design</text>
-    <rect x="352" y="170" width="72" height="64" rx="8" fill="#1e293b"/>
-    <text x="388" y="207" text-anchor="middle" font-size="13.5" font-weight="700" fill="#ffffff">Code</text>
-    <rect x="430" y="170" width="72" height="64" rx="8" fill="#dc2626"/>
-    <text x="466" y="207" text-anchor="middle" font-size="13.5" font-weight="700" fill="#ffffff">Test</text>
+    <rect x="380" y="166" width="56" height="64" rx="8" fill="url(#gDesign)"/>
+    <text x="408" y="203" text-anchor="middle" font-size="12.5" font-weight="700" fill="#ffffff">Design</text>
+    <rect x="441" y="166" width="56" height="64" rx="8" fill="url(#gCode)"/>
+    <text x="469" y="203" text-anchor="middle" font-size="12.5" font-weight="700" fill="#ffffff">Code</text>
+    <rect x="502" y="166" width="56" height="64" rx="8" fill="url(#gTest)"/>
+    <text x="530" y="203" text-anchor="middle" font-size="12.5" font-weight="700" fill="#ffffff">Test</text>
 
     <!-- Agile Iteration 3 -->
-    <rect x="516" y="170" width="72" height="64" rx="8" fill="#0891b2"/>
-    <text x="552" y="207" text-anchor="middle" font-size="13.5" font-weight="700" fill="#ffffff">Design</text>
-    <rect x="594" y="170" width="72" height="64" rx="8" fill="#1e293b"/>
-    <text x="630" y="207" text-anchor="middle" font-size="13.5" font-weight="700" fill="#ffffff">Code</text>
-    <rect x="672" y="170" width="72" height="64" rx="8" fill="#dc2626"/>
-    <text x="708" y="207" text-anchor="middle" font-size="13.5" font-weight="700" fill="#ffffff">Test</text>
+    <rect x="580" y="166" width="56" height="64" rx="8" fill="url(#gDesign)"/>
+    <text x="608" y="203" text-anchor="middle" font-size="12.5" font-weight="700" fill="#ffffff">Design</text>
+    <rect x="641" y="166" width="56" height="64" rx="8" fill="url(#gCode)"/>
+    <text x="669" y="203" text-anchor="middle" font-size="12.5" font-weight="700" fill="#ffffff">Code</text>
+    <rect x="702" y="166" width="56" height="64" rx="8" fill="url(#gTest)"/>
+    <text x="730" y="203" text-anchor="middle" font-size="12.5" font-weight="700" fill="#ffffff">Test</text>
 
     <!-- Agile Final Deploy -->
-    <rect x="760" y="170" width="168" height="64" rx="8" fill="#10b981"/>
-    <text x="844" y="208" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Deploy</text>
+    <rect x="782" y="166" width="144" height="64" rx="10" fill="url(#gDeploy)"/>
+    <text x="854" y="204" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Deploy</text>
   </g>
   <!-- Row 3: DevOps (Design -> Code -> Test -> Deploy each time) -->
-  <text x="32" y="270" font-size="18" font-weight="800" fill="#1e293b">DevOps</text>
+  <g filter="url(#laneShadow)">
+    <rect x="18" y="266" width="924" height="112" rx="16" fill="#ffffff" stroke="#a7f3d0" stroke-width="2"/>
+  </g>
+  <rect x="34" y="286" width="128" height="72" rx="12" fill="#ecfdf5" stroke="#6ee7b7" stroke-width="1.5"/>
+  <text x="98" y="318" text-anchor="middle" font-size="17" font-weight="800" fill="#065f46">DevOps</text>
+  <text x="98" y="339" text-anchor="middle" font-size="11" font-family="'JetBrains Mono', monospace" font-weight="600" fill="#059669">Continuous</text>
+
+  <!-- DevOps Cycle Containers -->
+  <rect x="174" y="280" width="242" height="84" rx="12" fill="#f0fdf4" stroke="#86efac" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <rect x="424" y="280" width="242" height="84" rx="12" fill="#f0fdf4" stroke="#86efac" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <rect x="674" y="280" width="252" height="84" rx="12" fill="#f0fdf4" stroke="#86efac" stroke-width="1.2" stroke-dasharray="4 3"/>
+
   <g filter="url(#dvShadow)">
     <!-- DevOps Iteration 1 -->
-    <rect x="32" y="284" width="68" height="64" rx="8" fill="#0891b2"/>
-    <text x="66" y="321" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">Design</text>
-    <rect x="105" y="284" width="68" height="64" rx="8" fill="#1e293b"/>
-    <text x="139" y="321" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">Code</text>
-    <rect x="178" y="284" width="68" height="64" rx="8" fill="#dc2626"/>
-    <text x="212" y="321" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">Test</text>
-    <rect x="251" y="284" width="68" height="64" rx="8" fill="#10b981"/>
-    <text x="285" y="321" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">Deploy</text>
+    <rect x="180" y="290" width="54" height="64" rx="8" fill="url(#gDesign)"/>
+    <text x="207" y="327" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Design</text>
+    <rect x="238" y="290" width="54" height="64" rx="8" fill="url(#gCode)"/>
+    <text x="265" y="327" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Code</text>
+    <rect x="296" y="290" width="54" height="64" rx="8" fill="url(#gTest)"/>
+    <text x="323" y="327" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Test</text>
+    <rect x="354" y="290" width="56" height="64" rx="8" fill="url(#gDeploy)"/>
+    <text x="382" y="327" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Deploy</text>
 
     <!-- DevOps Iteration 2 -->
-    <rect x="336" y="284" width="68" height="64" rx="8" fill="#0891b2"/>
-    <text x="370" y="321" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">Design</text>
-    <rect x="409" y="284" width="68" height="64" rx="8" fill="#1e293b"/>
-    <text x="443" y="321" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">Code</text>
-    <rect x="482" y="284" width="68" height="64" rx="8" fill="#dc2626"/>
-    <text x="516" y="321" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">Test</text>
-    <rect x="555" y="284" width="68" height="64" rx="8" fill="#10b981"/>
-    <text x="589" y="321" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">Deploy</text>
+    <rect x="430" y="290" width="54" height="64" rx="8" fill="url(#gDesign)"/>
+    <text x="457" y="327" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Design</text>
+    <rect x="488" y="290" width="54" height="64" rx="8" fill="url(#gCode)"/>
+    <text x="515" y="327" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Code</text>
+    <rect x="546" y="290" width="54" height="64" rx="8" fill="url(#gTest)"/>
+    <text x="573" y="327" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Test</text>
+    <rect x="604" y="290" width="56" height="64" rx="8" fill="url(#gDeploy)"/>
+    <text x="632" y="327" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Deploy</text>
 
     <!-- DevOps Iteration 3 -->
-    <rect x="641" y="284" width="68" height="64" rx="8" fill="#0891b2"/>
-    <text x="675" y="321" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">Design</text>
-    <rect x="714" y="284" width="68" height="64" rx="8" fill="#1e293b"/>
-    <text x="748" y="321" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">Code</text>
-    <rect x="787" y="284" width="68" height="64" rx="8" fill="#dc2626"/>
-    <text x="821" y="321" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">Test</text>
-    <rect x="860" y="284" width="68" height="64" rx="8" fill="#10b981"/>
-    <text x="894" y="321" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">Deploy</text>
+    <rect x="680" y="290" width="56" height="64" rx="8" fill="url(#gDesign)"/>
+    <text x="708" y="327" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Design</text>
+    <rect x="740" y="290" width="56" height="64" rx="8" fill="url(#gCode)"/>
+    <text x="768" y="327" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Code</text>
+    <rect x="800" y="290" width="56" height="64" rx="8" fill="url(#gTest)"/>
+    <text x="828" y="327" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Test</text>
+    <rect x="860" y="290" width="60" height="64" rx="8" fill="url(#gDeploy)"/>
+    <text x="890" y="327" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Deploy</text>
   </g>
 </svg>

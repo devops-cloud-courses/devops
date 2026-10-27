@@ -1,46 +1,68 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 380" width="960" height="380" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
   <defs>
+    <pattern id="plDots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="1.2" fill="#cbd5e1" fill-opacity="0.55"/>
+    </pattern>
     <linearGradient id="plActive" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#2563eb"/>
       <stop offset="100%" stop-color="#4f46e5"/>
     </linearGradient>
     <linearGradient id="plHighlight" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#059669"/>
-      <stop offset="100%" stop-color="#047857"/>
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
     </linearGradient>
     <filter id="plShadow" x="-10%" y="-10%" width="120%" height="125%">
-      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.08"/>
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.10"/>
+    </filter>
+    <filter id="plTrackShadow" x="-4%" y="-10%" width="108%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.05"/>
     </filter>
   </defs>
 
-  <rect width="960" height="380" rx="16" fill="#f8fafc"/>
+  <rect width="960" height="380" rx="18" fill="#f8fafc"/>
+  <rect width="960" height="380" rx="18" fill="url(#plDots)"/>
 
-  <line x1="400" y1="94" x2="400" y2="183" stroke="#94a3b8" stroke-width="2" stroke-dasharray="7 6"/>
-  <line x1="528" y1="94" x2="528" y2="273" stroke="#059669" stroke-width="2" stroke-dasharray="7 6"/>
+  <line x1="400" y1="96" x2="400" y2="188" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="6 5"/>
+  <line x1="528" y1="96" x2="528" y2="273" stroke="#10b981" stroke-width="2" stroke-dasharray="6 5"/>
 
   <g filter="url(#plShadow)">
-    <polygon points="24,24 138,24 156,54 138,84 24,84 42,54" fill="url(#plActive)"/>
-    <text x="90.0" y="60" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Plan</text>
-    <polygon points="152,24 266,24 284,54 266,84 152,84 170,54" fill="url(#plActive)"/>
-    <text x="218.0" y="60" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Code</text>
-    <polygon points="280,24 394,24 412,54 394,84 280,84 298,54" fill="url(#plActive)"/>
-    <text x="346.0" y="60" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Build</text>
-    <polygon points="408,24 522,24 540,54 522,84 408,84 426,54" fill="url(#plHighlight)"/>
-    <text x="474.0" y="60" text-anchor="middle" font-size="16" font-weight="800" fill="#ffffff">Test</text>
-    <polygon points="536,24 650,24 668,54 650,84 536,84 554,54" fill="#cbd5e1"/>
-    <text x="602.0" y="60" text-anchor="middle" font-size="16" font-weight="700" fill="#475569">Release</text>
-    <polygon points="664,24 778,24 796,54 778,84 664,84 682,54" fill="#cbd5e1"/>
-    <text x="730.0" y="60" text-anchor="middle" font-size="16" font-weight="700" fill="#475569">Deploy</text>
-    <polygon points="792,24 906,24 924,54 906,84 792,84 810,54" fill="#cbd5e1"/>
-    <text x="858.0" y="60" text-anchor="middle" font-size="16" font-weight="700" fill="#475569">Operate</text>
+    <polygon points="24,22 138,22 156,56 138,90 24,90 42,56" fill="url(#plActive)"/>
+    <text x="92.0" y="44" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#bfdbfe">01</text>
+    <text x="92.0" y="69" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Plan</text>
+    <polygon points="152,22 266,22 284,56 266,90 152,90 170,56" fill="url(#plActive)"/>
+    <text x="220.0" y="44" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#bfdbfe">02</text>
+    <text x="220.0" y="69" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Code</text>
+    <polygon points="280,22 394,22 412,56 394,90 280,90 298,56" fill="url(#plActive)"/>
+    <text x="348.0" y="44" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#bfdbfe">03</text>
+    <text x="348.0" y="69" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Build</text>
+    <polygon points="408,22 522,22 540,56 522,90 408,90 426,56" fill="url(#plHighlight)"/>
+    <text x="476.0" y="44" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#a7f3d0">04</text>
+    <text x="476.0" y="69" text-anchor="middle" font-size="16" font-weight="800" fill="#ffffff">Test</text>
+    <polygon points="536,22 650,22 668,56 650,90 536,90 554,56" fill="#e2e8f0"/>
+    <text x="604.0" y="44" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#94a3b8">05</text>
+    <text x="604.0" y="69" text-anchor="middle" font-size="16" font-weight="700" fill="#64748b">Release</text>
+    <polygon points="664,22 778,22 796,56 778,90 664,90 682,56" fill="#e2e8f0"/>
+    <text x="732.0" y="44" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#94a3b8">06</text>
+    <text x="732.0" y="69" text-anchor="middle" font-size="16" font-weight="700" fill="#64748b">Deploy</text>
+    <polygon points="792,22 906,22 924,56 906,90 792,90 810,56" fill="#e2e8f0"/>
+    <text x="860.0" y="44" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#94a3b8">07</text>
+    <text x="860.0" y="69" text-anchor="middle" font-size="16" font-weight="700" fill="#64748b">Operate</text>
   </g>
 
-  <text x="214.0" y="154" text-anchor="middle" font-size="15" font-weight="700" fill="#334155">Agile Development</text>
-  <line x1="38" y1="165" x2="382" y2="165" stroke="#64748b" stroke-width="2.5"/>
-  <polygon points="28,165 39,159.5 39,170.5" fill="#64748b"/>
-  <polygon points="392,165 381,159.5 381,170.5" fill="#64748b"/>
-  <text x="278.0" y="244" text-anchor="middle" font-size="16" font-weight="800" fill="#065f46">Continuous Integration</text>
-  <line x1="38" y1="255" x2="510" y2="255" stroke="#059669" stroke-width="3"/>
-  <polygon points="28,255 39,249.5 39,260.5" fill="#059669"/>
-  <polygon points="520,255 509,249.5 509,260.5" fill="#059669"/>
+  <g filter="url(#plTrackShadow)">
+    <rect x="28" y="150" width="372" height="40" rx="20" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  </g>
+  <line x1="50" y1="170" x2="378" y2="170" stroke="#64748b" stroke-width="2.5"/>
+  <polygon points="42,170 52,165 52,175" fill="#64748b"/>
+  <polygon points="386,170 376,165 376,175" fill="#64748b"/>
+  <rect x="118.8" y="156" width="190.4" height="28" rx="14" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="214.0" y="175" text-anchor="middle" font-size="13.5" font-weight="800" fill="#334155">Agile Development</text>
+  <g filter="url(#plTrackShadow)">
+    <rect x="28" y="235" width="500" height="40" rx="20" fill="#ecfdf5" stroke="#6ee7b7" stroke-width="1.5"/>
+  </g>
+  <line x1="50" y1="255" x2="506" y2="255" stroke="#059669" stroke-width="2.5"/>
+  <polygon points="42,255 52,250 52,260" fill="#059669"/>
+  <polygon points="514,255 504,250 504,260" fill="#059669"/>
+  <rect x="159.8" y="241" width="236.4" height="28" rx="14" fill="#059669" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="278.0" y="260" text-anchor="middle" font-size="13.5" font-weight="800" fill="#ffffff">Continuous Integration</text>
 </svg>

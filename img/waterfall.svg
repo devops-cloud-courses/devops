@@ -1,24 +1,53 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 165" width="960" height="165" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 148" width="960" height="148" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
   <defs>
-    <filter id="dvShadow" x="-10%" y="-10%" width="120%" height="125%">
-      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.08"/>
+    <pattern id="dotGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="1.2" fill="#cbd5e1" fill-opacity="0.55"/>
+    </pattern>
+    <linearGradient id="gDesign" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="gCode" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="gTest" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f43f5e"/>
+      <stop offset="100%" stop-color="#dc2626"/>
+    </linearGradient>
+    <linearGradient id="gDeploy" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <filter id="dvShadow" x="-8%" y="-8%" width="116%" height="124%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.10"/>
+    </filter>
+    <filter id="laneShadow" x="-4%" y="-6%" width="108%" height="116%">
+      <feDropShadow dx="0" dy="2" stdDeviation="5" flood-color="#0f172a" flood-opacity="0.05"/>
     </filter>
   </defs>
-  <rect width="960" height="165" rx="16" fill="#f8fafc"/>
+  <rect width="960" height="148" rx="18" fill="#f8fafc"/>
+  <rect width="960" height="148" rx="18" fill="url(#dotGrid)"/>
 
   <!-- Row 1: Waterfall -->
-  <text x="32" y="42" font-size="18" font-weight="800" fill="#1e293b">Waterfall</text>
+  <g filter="url(#laneShadow)">
+    <rect x="18" y="18" width="924" height="112" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  </g>
+  <rect x="34" y="38" width="128" height="72" rx="12" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="98" y="70" text-anchor="middle" font-size="17" font-weight="800" fill="#0f172a">Waterfall</text>
+  <text x="98" y="91" text-anchor="middle" font-size="11" font-family="'JetBrains Mono', monospace" font-weight="600" fill="#64748b">Sequential</text>
+
   <g filter="url(#dvShadow)">
-    <rect x="32" y="56" width="175" height="64" rx="8" fill="#0891b2"/>
-    <text x="119.5" y="94" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Design</text>
+    <rect x="178" y="42" width="154" height="64" rx="10" fill="url(#gDesign)"/>
+    <text x="255" y="80" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Design</text>
 
-    <rect x="219" y="56" width="352" height="64" rx="8" fill="#1e293b"/>
-    <text x="395" y="94" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Code</text>
+    <rect x="342" y="42" width="276" height="64" rx="10" fill="url(#gCode)"/>
+    <text x="480" y="80" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Code</text>
 
-    <rect x="583" y="56" width="165" height="64" rx="8" fill="#dc2626"/>
-    <text x="665.5" y="94" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Test</text>
+    <rect x="628" y="42" width="144" height="64" rx="10" fill="url(#gTest)"/>
+    <text x="700" y="80" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Test</text>
 
-    <rect x="760" y="56" width="168" height="64" rx="8" fill="#10b981"/>
-    <text x="844" y="94" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Deploy</text>
+    <rect x="782" y="42" width="144" height="64" rx="10" fill="url(#gDeploy)"/>
+    <text x="854" y="80" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Deploy</text>
   </g>
 </svg>
