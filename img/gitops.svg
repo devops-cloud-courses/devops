@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 250" width="960" height="250" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <defs>
+    <pattern id="goDots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="1.2" fill="#cbd5e1" fill-opacity="0.55"/>
+    </pattern>
+    <linearGradient id="goCtrl" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+    <filter id="goShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.09"/>
+    </filter>
+  </defs>
+
+  <rect width="960" height="250" rx="18" fill="#f8fafc"/>
+  <rect width="960" height="250" rx="18" fill="url(#goDots)"/>
+
+  <!-- Box 1: Developer / CI -->
+  <g filter="url(#goShadow)">
+    <rect x="26" y="55" width="180" height="120" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+    <rect x="44" y="73" width="144" height="28" rx="8" fill="#f1f5f9"/>
+    <text x="116" y="92" text-anchor="middle" font-size="13" font-weight="800" fill="#0f172a">Developer / CI</text>
+    <text x="116" y="124" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="600" fill="#475569">git commit / PR</text>
+    <text x="116" y="148" text-anchor="middle" font-size="11.5" font-weight="600" fill="#64748b">Update image tag</text>
+  </g>
+
+  <!-- Arrow 1: Push to Git -->
+  <line x1="206" y1="115" x2="266" y2="115" stroke="#2563eb" stroke-width="3"/>
+  <polygon points="276,115 264,109 264,121" fill="#2563eb"/>
+  <text x="241" y="102" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#2563eb">push</text>
+
+  <!-- Box 2: Git Repository (Single Source of Truth) -->
+  <g filter="url(#goShadow)">
+    <rect x="278" y="45" width="210" height="140" rx="16" fill="#eff6ff" stroke="#60a5fa" stroke-width="2"/>
+    <rect x="298" y="63" width="170" height="30" rx="8" fill="#2563eb"/>
+    <text x="383" y="83" text-anchor="middle" font-size="13.5" font-weight="800" fill="#ffffff">Git Repository</text>
+    <text x="383" y="116" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1e3a8a">Desired State (SSOT)</text>
+    <text x="383" y="139" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#2563eb">K8s YAML • Helm • Kustomize</text>
+    <text x="383" y="162" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" fill="#475569">Audit trail &amp; git revert</text>
+  </g>
+
+  <!-- Arrow 2: Pull Desired State -->
+  <line x1="488" y1="115" x2="554" y2="115" stroke="#4f46e5" stroke-width="3" stroke-dasharray="6 4"/>
+  <polygon points="564,115 552,109 552,121" fill="#4f46e5"/>
+  <text x="526" y="102" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#4f46e5">pull / watch</text>
+
+  <!-- Production Cluster Boundary -->
+  <rect x="566" y="22" width="368" height="206" rx="18" fill="#ecfdf5" stroke="#6ee7b7" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="750" y="44" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="800" fill="#065f46">PRODUCTION KUBERNETES CLUSTER</text>
+
+  <!-- Box 3: GitOps Controller (Argo CD / Flux) -->
+  <g filter="url(#goShadow)">
+    <rect x="584" y="60" width="154" height="110" rx="14" fill="url(#goCtrl)"/>
+    <text x="661" y="92" text-anchor="middle" font-size="13.5" font-weight="800" fill="#ffffff">GitOps Agent</text>
+    <text x="661" y="114" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#bfdbfe">Argo CD / Flux</text>
+    <text x="661" y="142" text-anchor="middle" font-size="11" font-weight="600" fill="#e0e7ff">Reconcile Loop</text>
+  </g>
+
+  <!-- Arrow 3: Reconcile Live State -->
+  <line x1="738" y1="115" x2="778" y2="115" stroke="#059669" stroke-width="3"/>
+  <polygon points="788,115 776,109 776,121" fill="#059669"/>
+
+  <!-- Box 4: Live Workloads -->
+  <g filter="url(#goShadow)">
+    <rect x="790" y="60" width="126" height="110" rx="14" fill="#ffffff" stroke="#34d399" stroke-width="2"/>
+    <text x="853" y="92" text-anchor="middle" font-size="13" font-weight="800" fill="#065f46">Live State</text>
+    <text x="853" y="116" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#059669">Pods • Services</text>
+    <text x="853" y="140" text-anchor="middle" font-size="11" font-weight="700" fill="#047857">✓ In Sync</text>
+  </g>
+
+  <!-- Bottom Drift Detection Feedback Arc -->
+  <path d="M 853 170 Q 757 212 661 170" fill="none" stroke="#059669" stroke-width="2" stroke-dasharray="4 3"/>
+  <polygon points="661,170 673,171 668,181" fill="#059669"/>
+  <text x="757" y="208" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#065f46">Continuous drift detection &amp; self-healing</text>
+</svg>

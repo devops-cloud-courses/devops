@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 320" width="960" height="320" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <defs>
+    <pattern id="tpDots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="1.2" fill="#cbd5e1" fill-opacity="0.55"/>
+    </pattern>
+    <linearGradient id="tpE2E" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="tpInt" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="tpUnit" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <filter id="tpShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <rect width="960" height="320" rx="18" fill="#f8fafc"/>
+  <rect width="960" height="320" rx="18" fill="url(#tpDots)"/>
+
+  <!-- Left Axis: Speed & Isolation -->
+  <g filter="url(#tpShadow)">
+    <rect x="32" y="34" width="164" height="252" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  </g>
+  <text x="114" y="64" text-anchor="middle" font-size="13" font-weight="800" fill="#0f172a">EXECUTION SPEED</text>
+  <text x="114" y="84" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#d97706">Slow (Minutes)</text>
+  <line x1="114" y1="100" x2="114" y2="226" stroke="#10b981" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="114,238 107,224 121,224" fill="#10b981"/>
+  <text x="114" y="262" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="700" fill="#059669">Fast (Milliseconds)</text>
+
+  <!-- Pyramid Tiers -->
+  <g filter="url(#tpShadow)">
+    <!-- Top Tier: E2E (10%) -->
+    <polygon points="480,26 595,104 365,104" fill="url(#tpE2E)" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round"/>
+    <text x="480" y="72" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#fef3c7">~10%</text>
+    <text x="480" y="92" text-anchor="middle" font-size="14.5" font-weight="800" fill="#ffffff">E2E / UI</text>
+
+    <!-- Middle Tier: Integration (20%) -->
+    <polygon points="359,110 601,110 668,194 292,194" fill="url(#tpInt)" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round"/>
+    <text x="480" y="146" text-anchor="middle" font-size="16" font-weight="800" fill="#ffffff">Integration &amp; Contract Tests (~20%)</text>
+    <text x="480" y="170" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600" fill="#dbeafe">APIs • Databases • Testcontainers • Pact</text>
+
+    <!-- Base Tier: Unit Tests (70%) -->
+    <polygon points="286,200 674,200 742,290 218,290" fill="url(#tpUnit)" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round"/>
+    <text x="480" y="240" text-anchor="middle" font-size="17" font-weight="800" fill="#ffffff">Unit Tests &amp; Static Analysis (~70%)</text>
+    <text x="480" y="266" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12.5" font-weight="600" fill="#d1fae5">Isolated Functions • Classes • Linters • Fast Feedback</text>
+  </g>
+
+  <!-- Right Axis: Cost & Maintenance -->
+  <g filter="url(#tpShadow)">
+    <rect x="764" y="34" width="164" height="252" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  </g>
+  <text x="846" y="64" text-anchor="middle" font-size="13" font-weight="800" fill="#0f172a">COST &amp; FRAGILITY</text>
+  <text x="846" y="84" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="700" fill="#dc2626">Expensive &amp; Brittle</text>
+  <line x1="846" y1="236" x2="846" y2="110" stroke="#ef4444" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="846,98 839,112 853,112" fill="#ef4444"/>
+  <text x="846" y="262" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#059669">Cheap &amp; Stable</text>
+</svg>

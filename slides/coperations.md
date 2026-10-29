@@ -33,9 +33,10 @@
 
 > The **3 Pillars of Observability**: **Metrics** (*what* is broken), **Logs** (*why* it broke), and **Traces** (*where* it broke)
 
-* **Distributed Tracing**: Track a single user request end-to-end across dozens of microservices using a shared trace ID
-* Pinpoints latency bottlenecks, cascading failures, and broken service dependencies
-* **`OpenTelemetry` (`OTel`)**: The cloud-native industry standard for collecting and exporting metrics, logs, and traces
+* **Distributed Tracing**: Track a single user request end-to-end across microservices using a shared trace ID
+* **`OpenTelemetry` (`OTel`)**: The cloud-native industry standard for collecting and correlating metrics, logs, and traces
+
+<img src="img/observability.svg" alt="Three Pillars of Observability and OpenTelemetry architecture diagram" />
 
 ----
 
@@ -50,8 +51,10 @@
 
 ### Auto-Scaling
 
-* Allow applications to scale automatically when facing a sudden surge in traffic
-* Traffic surges are measured through metrics collection and centralized logging solutions
+> Dynamically adjust compute capacity to match real-time demand and optimize cloud cost
+
+* **Workload Auto-Scaling**: `HPA` (Horizontal Pod Autoscaler), `VPA`, and **`KEDA`** (event-driven scaling on queue depth, HTTP traffic, or custom `Prometheus` metrics, including scale-to-zero)
+* **Node / Cluster Auto-Scaling**: **`Karpenter`** and Cloud Cluster Autoscalers provision right-sized compute nodes in seconds
 
 ----
 
@@ -77,8 +80,8 @@
 
 ### Skills / Tools
 
-* Observability & Metrics: `OpenTelemetry`, `Prometheus`, `Grafana`, `Datadog`, ...
-* Logs & Distributed Tracing: `Grafana Loki`, `Jaeger`, `Grafana Tempo`, `Elasticsearch` / `Kibana`, `Fluent Bit`, ...
-* Infrastructure as Code (`IaC`): `Terraform` / `OpenTofu`, `Pulumi`, `Ansible`, `Crossplane`, ...
-* Chaos Engineering & Incident Response: `Chaos Mesh`, `LitmusChaos`, `PagerDuty`, ...
-* Advanced system, cloud, and networking skills
+* Observability & Metrics: `OpenTelemetry` (`OTel`), `Prometheus` / `VictoriaMetrics` / `Thanos`, `Grafana`, `Datadog`, `Cilium Hubble` (`eBPF`), ...
+* Logs & Distributed Tracing: `Grafana Loki`, `Grafana Tempo`, `Jaeger`, `OpenSearch` / `Elasticsearch`, `Fluent Bit` / `Vector`, ...
+* Infrastructure & Policy as Code (`IaC` / `PaC`): `Terraform` / `OpenTofu`, `Pulumi`, `Crossplane`, `Ansible`, `Packer`, `OPA` / `Kyverno`, ...
+* Auto-Scaling, Chaos & Incident Response: `KEDA`, `Karpenter`, `Chaos Mesh`, `LitmusChaos`, `PagerDuty` / `Grafana OnCall`, ...
+* Advanced Linux, cloud-native networking, and distributed systems skills

@@ -1,212 +1,36 @@
-# Draft cours DevOps ECE
+# DevOps in a Nutshell — MSc Course Slides
 
-## Introduction
-### Qui on est 
-* Présentation des intervenants (Arthur et Laurent) et des sociétes des intervenants
-* Quel est notre métier
-### Pourquoi ce cours et quoi en attendre
-* C'est une formation qui est proposée en interne dans les sociétés
-* Les sujets traités dans cette formation augmentent considérablement la valeur des profils sur le marché
+Interactive [Reveal.js 6.0.2](https://revealjs.com/) lecture deck introducing **DevOps culture, organizational topologies, CI/CD pipelines, GitOps, Cloud-Native Observability, and Site Reliability Engineering (SRE)** for MSc Computer Science & Software Engineering students.
 
-## DevOps
+## Authors
 
-### Les différentes sous parties du Devops
-* Mentalité /
-* Bonnes pratiques
-* Continous Integration
-* Continuous Delivery
+- **Laurent Grangeau** — Cloud Solution Architect @ Google ([@laurentgrangeau](https://twitter.com/laurentgrangeau) | [github.com/laurentgrangeau](https://github.com/laurentgrangeau))
+- **Arthur Mauvezin** — DevOps Engineer @ Ouidou Consulting ([@arthurmauvezin](https://twitter.com/arthurmauvezin) | [github.com/arthurmauvezin](https://github.com/arthurmauvezin))
 
-## Continuous Integration
+## Lecture Structure
 
-Quoi 
-qui 
-ou
-quand
-comment 
-combien 
-pourquoi
+| Module | File | Key Topics & Technical Assets |
+|---|---|---|
+| **1. Title & Authors** | `slides/title.md` | Course cover & speaker bios |
+| **2. Introduction** | `slides/introduction.md` | Course motivation, market demand, Reveal.js navigation |
+| **3. Agility Foundations** | `slides/agilite.md` | V-Model / Waterfall (`img/waterfall.svg`), Scrum (`img/agility.svg`), Agile Manifesto, limits of Agile |
+| **4. DevOps Philosophy** | `slides/devops.md` | Devs vs. Ops, Wall of Confusion (`img/wall-of-confusion.svg`), Agile to DevOps (`img/devops.svg`), **CALMS** pillars, **DORA Metrics** |
+| **5. Organizational Anti-Patterns** | `slides/antipattern.md` | 7 DevOps organizational anti-patterns (`img/anti-type-a.svg` – `img/anti-type-g.svg`) |
+| **6. Organizational Patterns** | `slides/pattern.md` | 8 proven DevOps & SRE topologies (`img/type-1.svg` – `img/type-8.svg`) |
+| **7. Working in a DevOps Team** | `slides/equipe.md` | Agile ceremonies, Pair/Mob programming, Coding Dojo, `TDD`/`BDD`, Git, Gitflow (`img/gitflow.svg`) vs. **Trunk-Based Development & Feature Flags** (`img/trunk-based.svg`), Pull Requests |
+| **8. Continuous Integration (CI)** | `slides/cintegration.md` | CI workflow (`img/wf-cintegration.svg`), **The Testing Pyramid** (`img/testing-pyramid.svg`), Unit/Integration (`Testcontainers`, `Pact`), E2E (`Playwright`), Load (`k6`), Static Analysis, **Shift-Left Security** (`SAST`, `SCA`, `SBOM`, `DAST`) |
+| **9. Continuous Delivery (CD)** | `slides/cdelivery.md` | CD workflow (`img/wf-cdelivery.svg`), traceability, **Semantic Versioning (`SemVer`)**, **Artifact Registries & Supply Chain Provenance** (`OCI`, `Sigstore Cosign`, `SLSA`, `SBOM`) |
+| **10. Continuous Deployment** | `slides/cdeployment.md` | Deployment workflow (`img/wf-cdeployment.svg`), **Progressive Delivery** (Rolling, Blue/Green, Canary, Feature Flags), **GitOps** (`img/gitops.svg` — `Argo CD`, `Flux`) |
+| **11. Continuous Operations & SRE** | `slides/coperations.md` | Operations workflow (`img/wf-coperations.svg`), **3 Pillars of Observability & `OpenTelemetry`** (`img/observability.svg`), **Immutable Infrastructure (`IaC`)**, **Auto-Scaling** (`HPA`, `KEDA`, `Karpenter`), **SRE (`SLI`, `SLO`, `SLA`, Error Budgets)**, **Chaos Engineering & Blameless Post-Mortems** |
+| **12. Continuous Everything** | `slides/ceverything.md` | DevOps Infinity Loop (`img/devops-infinity-workflow.svg`), Continuous Feedback (`RUM`), **DevSecOps**, **Platform Engineering (`IDP` / `Backstage`)**, **FinOps & GreenOps**, **MLOps / LLMOps** |
+| **13. Conclusion & References** | `slides/conclusion.md` | Key takeaways, organizational complexity, and curated reading (*The Twelve-Factor App*, *Accelerate / DORA*, *Google SRE Books*, *DevOps Topologies*, *The DevOps Handbook*) |
 
-## Reveal useful
-<img src="images/waterfall.png">
-<img src="images/waterfall.png" height="200" width="200" />
-<img src="images/waterfall.png" style="background:none; border:none; box-shadow:none;"/>
-![Image](https://images.techhive.com/images/article/2016/03/amazon-cloud-dc-map-100651841-large.idge.gif)
-<img src="https://www.agileit.com/wp-content/uploads/2017/11/az-graphic-two.png" width="35%" />
+## Running Locally
 
-- Value
- - Subvalue
+Serve the repository root with any static HTTP server:
 
+```bash
+python3 -m http.server 8000
+```
 
-## Parties
-### Intro
-### Situation actuelle / Pourquoi le DevOps ?
-* Cycle en V
-* Cycle de dev long
-* invention de l'agilité
-* qu'est ce que l'agilité 
-* Limites de l'agilité
-  * Dépassement de projets en thunes en temps
-  * Et les autres autour (PO, Resp produit, User) ? Tous le monde n'est pas concerné
-
-Notes:
-* Suivi des specs de bases vers un livrable qui correspond pas > agilité
-* Cycle en V --> Constat : peu de projets sont réussis, dépassent le délai et un paquet des fontionnalités développées sont inutilisées
-* Ken Shwaber et consort se sont réunis pour faire une évole à l'XP --> Manifeste agile [image des cases du cycle en V vs mini cycles en V)
-
-### Qu'est ce que le DevOps
-#### Devs vs Ops
-* Devs: Toute personne impliqué dans la fabrication du logiciel jusqu’à la livraison de celui-ci => recherche le changement continuelle afin de satisfaire le client final (nouvelles fonctionnalités amélioration des performances, expérience utilisateur)
-* Ops: Toute personne impliqué dans la maintenance et l’exploitation de la production => recherche la stabilité organisationnelle et de la plateforme de production afin de maintenir un niveau de satisfaction client élevé
-#### Definition
-Le DevOps est un mouvement visant à l’alignement de l’ensemble des équipes du système d’information sur un objectif commun, à commencer par les équipes de Dev chargées de faire évoluer le système d’information et les Ops responsables des infrastructures.
-DevOps est la pratique où les ingénieurs de développement (Dev) et d’exploitation (Ops) participent ensemble à l’intégralité du cycle de vie de services : de la conception au support de production en passant par le développement.
-#### Faire tomber le mur
-Faire tomber le mur de la confusion
-#### L'agile et le scrum dans tout ça
-#### Keep CALMS: Pilier du DevOps
-* Culture : Les individus et les interactions plutôt que les processus et les outils
-* Automatisation : Les machines sont vraiment bonnes à faire la même tâche encore et encore.
-* Lean : Les équipes Devs et les équipes Ops doivent trouver des moyens pour réduire les déchets et rationaliser les processus en entier.
-* Mesure : Etre capable de mesurer les performances et les améliorations apportées au produit #Monitoring #KPI
-* Sharing/Solidarité : Il est important de partager les avantages entre les équipes ==> #Communication #Collaboration #Partage #Interaction
-
-Notes:
-* DevOps s'appuie sur l'agilité 
-* Je comprend pas ça marche sur mon poste
-* DevOps == Petite itérations qui visent à être complète (build, test, deliver, deploy, feedback)
-* Piliers de l'agilité et piliers du DevOps (a voir sur le net)
-
-### Continous Integration
-#### Qu'est ce que l'intégration
-#### Gitflow
-#### Build
-#### Test
-* unit
-* fonctionnal / end-to-end
-* load
-* security
-* ...
-
-### Continous Delivery
-
-### Continuous Deployment
-### Continuous Operations
-### Continuous everything
-* Mettre l'image avec toutes les flèches de la vidéo
-* Etre réactif
-* Etre réactif !!! (débug, deployement, ) 
-* Continuous feedback
-* le signe infini devops en image
-
----
-# Remarque
-* Par rapport au team devops, ajouter à la fin de devops, que ce sont des améliorations HUMAINES et techniques
-
-* TDD / BDD
-
-### Conclusion
-* Métier très logique
-
-### Glossaire
-* DAT = dossier d'architecture technique (fait dès le début) --> Adaptation au changemetn plutot que suivre le plan
-
-
-
-* livrer souvent, livrer vite, livrer sans régression
-* Développer avec la cible (tous les environements son ISO)
-
-* Culture des logs, de la mesure
-* le dev a le métier qui est entre la prod et ĺ'exploitant (bof comme phrase)
-
-* Feature flipping
-* Test AB
-* TDD - Test Driven Development
-* BDD - Behavior Driven Development
-
-
-* un max de résilience (capacité de mon app à rendre du service même en cas de tombage d'une partie du système)
-
-* Waterfall
-Waterfall : Design > Code > Test > Deploy
-Agile: Design > Code > Test > Design > Code > Test > Design > Code > Test > Deploy
-Devops: Design > Code > Test > Deploy > Design > Code > Test > Deploy > Design > Code > Test > Deploy
-(With big design at first and little design then)
-
-Plan > Code > Build > Test > Release > Deploy > Operate
-* Agile (Plan > Code > Build )
-* COntinuous integration (Plan > Code > Build > Test)
-* Continuous delivery (Plan > Code > Build > Test > Release)
-* Continuous Deployment (Plan > Code > Build > Test > Release > Deploy)
-* Continuous Operations (Plan > Code > Build > Test > Release > Deploy > Operate)
-  * Continuous optimiser le temps perdu et feedback de la prod et amélioration continue sur tout le cycle 
-
-* TTM - Time to market
-* Equipe pluridisciplinaire - tout le monde doit tout savoir (très compliqué à faire) - Couteau suisse
-* MVP - Minimum viable product
-* Test fonctionnels - Cucumber (BDD) scenario de gherkin - Attention à ne pas trop en faire (très lourd à garder à jour) - trouver son rythme, son niveau d'acceptation
-* Sonar - qualité du code source
-* Réduire toutes les taches et automatiser un maximum
-* Tests de charge - 
-
-----
-
-* Jenkins - pipeline - validation + tampon de l'appli
-* Toutes les confs sont du code - donc faisable par tous les devs logiques
-
-* Truck/Bus factor : si quelqu'un se fait écraser en rentrant du taff, il faut qu'elle puisse être remplacée facilement
-* Protocole de validation post mise en prod et suivi après les mises en prod + test a/b pour ouvrir petit à petit pour tout le monde. Le dev suit ce qui se passe avec un l'ops pour vérifier si ça se passe bien
-
-* vérification de la résilience (rien a foutre dans cette partie mais il fallait le noter)
-
-COntinuous Operations:
-* Recolte des metrics : Monitoring
-* Centralisation des logs
-* Scalabilité automatique
-* Analyse des tiers de charges (monitoring+logs) - pic d'activités
-* Chaos monkey - péter un truc au hasard en prod et vérifier que ca continue à marcher ou que ca remarche vite - on peut faire des chaos monkey à la main en butant un site de manière volontaire
-PRA - Plan de reprise de l'activité
-
-* Livraison à chaque sprint == le rève !!
-
-* Continuous feedback
-* Mettre de la doc et lien vers la doc interessente (12 factor)
-
-RAF:
-* Reste à rendre scalable
-* Démarche Lean --> Commit to prod == méga dream
-* Gestion des perturbations - Build vs Run (que faire quand beaucoup de retour de la prod)
-* Tout le monde n'est pas vraiment polyvalent
-* Remise en question perpetuelle
-* Un nouvel arrivant prend super cher pour apprendre tout en arrivant
-
-* Sonar
-* 12 factor app
-* XP
-
-COnclusion d'un devops:
-* Tout le monde peut/doit être moteur
-* NE pas hésiter à automatiser ou a proposer une automatisation
-
-# A ne pas oublier
-* ancien de l'ece
-* travaille à la fff
-
-
-
-* mise en place par le bas (les équipes techniques)
-* livrer plus vite
-* travailler plus intelligemment
-* Réduire le TTM (time to market)
-
-
---------------------------------
-## Deuxième pres
-* Automation engineer - un bon titre je trouve
-* 
-
-* 12 factor app
-* Difficulté de Docker en prod
-* Pet vs Cattle
-* Gestion de logs
-* Gestion du monitoring
-
+Then open `http://localhost:8000` in your browser.

@@ -82,10 +82,10 @@
 
 ### And many more...
 
-* `TDD` - Test Driven Development
-* `BDD` - Behavior Driven Development
-* Feature Flipping
-* A/B Testing
+* `TDD` - Test-Driven Development
+* `BDD` - Behavior-Driven Development
+* Mob / Ensemble Programming
+* Feature Flags (`OpenFeature`) & A/B Testing
 
 ----
 
@@ -107,11 +107,12 @@
 
 ----
 
-### Well-known Git Servers
+### Git Hosting & Collaboration Platforms
 
 * `GitHub`
 * `GitLab`
 * `Bitbucket`
+* `Azure DevOps`
 
 ----
 
@@ -135,9 +136,11 @@
 
 > Modern high-performing CI/CD teams favor short-lived branches over complex long-lived branch trees
 
-* **Gitflow**: Designed for scheduled release trains and multiple maintained versions, but long-lived branches often cause *"merge hell"* and slow down Continuous Integration
-* **Trunk-Based Development / GitHub Flow**: Developers merge small, frequent pull requests into `main` daily
-* **Feature Flags**: Incomplete features are merged safely behind runtime toggles, decoupling **code integration** from **feature release**
+* **Gitflow**: Long-lived branches (`develop`, `release/*`) often cause *"merge hell"* and slow down CI
+* **Trunk-Based Development**: Developers merge small, short-lived pull requests (`< 1 day`) into `main` daily
+* **Feature Flags**: Incomplete features are merged safely behind runtime toggles, decoupling **integration** from **release**
+
+<img src="img/trunk-based.svg" alt="Trunk-Based Development and Feature Flags diagram" />
 
 ----
 
