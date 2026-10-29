@@ -18,7 +18,8 @@
 
 ### Further Reading
 
-* [12factorapp](https://12factor.net/)
-* [XP from the trenches](https://www.infoq.com/minibooks/scrum-xp-from-the-trenches-2)
+* [The Twelve-Factor App](https://12factor.net/)
+* [DORA — DevOps Research and Assessment (*Accelerate*)](https://dora.dev/)
+* [Google Site Reliability Engineering (SRE) Books](https://sre.google/books/)
 * [DevOps Topologies](https://web.devopstopologies.com/)
-* [DevOps Handbook](https://devops.com/handbook/)
+* [The DevOps Handbook](https://itrevolution.com/product/the-devops-handbook/)

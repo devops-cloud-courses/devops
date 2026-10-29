@@ -33,6 +33,18 @@
 
 ----
 
+### The Testing Pyramid
+
+> Balance test speed, maintenance cost, and confidence across layers
+
+| Layer | Scope | Speed & Cost | Recommended Share |
+|---|---|---|---|
+| **Unit Tests** (Base) | Isolated functions / classes | Milliseconds, cheap to maintain | `~70%` |
+| **Integration Tests** (Middle) | Component boundaries, DBs, APIs | Seconds, moderate setup | `~20%` |
+| **End-to-End Tests** (Top) | Full user journeys / UI | Minutes, brittle & expensive | `~10%` |
+
+----
+
 ### Unit Tests
 
 * Tests aimed at verifying that a single component works on its own
@@ -68,11 +80,14 @@
 
 ----
 
-### Security Tests
+### Security Tests & Shift-Left Security
 
-* Test for known vulnerabilities (injections, XSS, ...)
-* Stress the application to see how it responds
-* Brute-force testing
+> Integrate security checks directly into every CI pipeline run (**DevSecOps**)
+
+* **`SAST` (Static Application Security Testing)**: Scan source code for security flaws and coding anti-patterns
+* **`SCA` (Software Composition Analysis)**: Audit third-party dependencies for known `CVEs` and generate an `SBOM` (Software Bill of Materials)
+* **Secret & Container Scanning**: Block leaked credentials/API keys in commits and scan container base images for vulnerabilities
+* **`DAST` (Dynamic Application Security Testing)**: Probe the running application for known vulnerabilities (injections, `XSS`, brute-force)
 
 ----
 
@@ -103,18 +118,17 @@
 
 ### Skills / Tools
 
-* Continuous Integration servers: `Jenkins`, `TeamCity`, `Bamboo`, `Travis (SaaS)`, `GitLab`, ...
-* Scripting: `bash`, `python`, `powershell`, `groovy`, ...
-* Building: `Maven`, `MSBuild`, `NPM`, ...
-* Dependency management: `Maven`, `NuGet`, `Pip`, `Bower`, `NPM`, ...
-* Unit Tests: `JUnit`, `NUnit`, `unittest`, `unit-test`, ...
+* CI/CD Platforms: `GitHub Actions`, `GitLab CI`, `Jenkins`, `CircleCI`, `Cloud Build`, ...
+* Scripting: `Bash`, `Python`, `PowerShell`, `Go`, ...
+* Build & Dependency Management: `Maven`, `Gradle`, `npm` / `pnpm`, `Poetry` / `uv`, `NuGet`, ...
+* Unit Tests: `JUnit`, `pytest`, `Vitest` / `Jest`, `NUnit`, `Go test`, ...
 
 ----
 
 ### Skills / Tools (cont.)
 
-* Integration Tests: `Failsafe`, `curl`, `SoapUI`, `Postman`, ...
-* Functional Tests: `Selenium`, `Cucumber`, `Test IO`, `HP UFT`, `SoapUI`, `Postman`, `Ranorex`, ...
-* Load Tests: `JMeter`, `Gatling`, `Locust`, ...
-* Security Tests: `Netsparker`, `Acunetix`, `Metasploit`
-* Code Analysis: `Sonar`, `Coverity`, `Fortify`
+* Integration & API Tests: `Testcontainers`, `Postman`, `REST Assured`, `curl`, ...
+* Functional / E2E Tests: `Playwright`, `Cypress`, `Selenium`, `Cucumber`, ...
+* Load Tests: `k6`, `Gatling`, `Locust`, `JMeter`, ...
+* Security & Supply Chain (`SAST` / `SCA` / `DAST`): `Trivy`, `Snyk`, `Dependabot`, `Semgrep`, `OWASP ZAP`, ...
+* Code Quality & Analysis: `SonarQube`, `CodeQL`, `ESLint`, `Ruff`, ...

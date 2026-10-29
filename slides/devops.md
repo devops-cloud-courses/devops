@@ -87,6 +87,19 @@
 
 ----
 
+### DORA Metrics: Engineering Performance
+
+> Industry-standard metrics (from *Accelerate* / DORA) to measure software delivery & operational maturity
+
+| Category | Metric | What It Measures |
+|---|---|---|
+| **Throughput** | `Deployment Frequency` | How often an organization successfully releases to production |
+| **Throughput** | `Lead Time for Changes` | Time it takes for a committed change to reach production |
+| **Stability** | `Change Failure Rate` | Percentage of deployments causing a failure in production |
+| **Stability** | `Failed Deployment Recovery Time` | Time it takes to restore service after a production incident (`MTTR`) |
+
+----
+
 ### Sharing
 
 > A developer must participate in delivering and deploying their deliverable

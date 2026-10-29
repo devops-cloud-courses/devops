@@ -25,12 +25,25 @@
 
 ----
 
-### Versioning Challenges
+### Versioning Challenges & Semantic Versioning
 
-> To make deliverable traceability easier, it is important to have a well-designed versioning scheme
+> To make deliverable traceability easier, adopt a strict **Semantic Versioning (`SemVer`)** scheme
 
+* Format: `MAJOR.MINOR.PATCH` (e.g., `5.21.12` or `5.21.12+build.3`):
+  * `MAJOR`: Incompatible API or breaking changes
+  * `MINOR`: Backward-compatible new features
+  * `PATCH`: Backward-compatible bug and security fixes
 * Versioning sometimes even challenges release scope and delivery timelines
-* Versioning example: `MAJOR.MINOR.PATCH_BUILDNUMBER` (`5.21.12_3`)
+
+----
+
+### Artifact Registries & Immutability
+
+> Build once, deploy anywhere: promote the exact same signed artifact across `Dev` → `Staging` → `Prod`
+
+* Never rebuild an application from source for each environment
+* Store versioned, immutable artifacts and container images in a central **Artifact Registry**
+* Attach provenance metadata, cryptographic signatures (`Cosign`), and an `SBOM` to every release artifact
 
 ----
 
@@ -41,6 +54,8 @@
 
 ----
 
-### Skills
+### Skills / Tools
 
-* Application packaging: `Maven`, `NPM`, `MSBuild`, `Python`, `Docker`, ...
+* Application & Container Packaging: `Docker` / `OCI`, `Helm`, `Maven`, `npm`, `Python Wheels`, ...
+* Artifact & Container Registries: `GitHub Packages (GHCR)`, `Google Artifact Registry`, `AWS ECR`, `Harbor`, `JFrog Artifactory`, `Sonatype Nexus`, ...
+* Artifact Signing & Provenance: `Sigstore Cosign`, `SLSA`, `Syft` (`SBOM`), ...

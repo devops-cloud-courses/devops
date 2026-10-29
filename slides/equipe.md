@@ -44,6 +44,16 @@
 
 ----
 
+### Trunk-Based Development vs. Gitflow
+
+> Modern high-performing CI/CD teams favor short-lived branches over complex long-lived branch trees
+
+* **Gitflow**: Designed for scheduled release trains and multiple maintained versions, but long-lived branches often cause *"merge hell"* and slow down Continuous Integration
+* **Trunk-Based Development / GitHub Flow**: Developers merge small, frequent pull requests into `main` daily
+* **Feature Flags**: Incomplete features are merged safely behind runtime toggles, decoupling **code integration** from **feature release**
+
+----
+
 ### Learn how to use Git
 
 * [The official website](https://git-scm.com/book/en/v2)
