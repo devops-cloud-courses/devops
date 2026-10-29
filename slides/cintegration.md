@@ -80,6 +80,15 @@
 
 ----
 
+### Code Analysis
+
+* Static or dynamic code analysis tools
+* Report metrics on code quality, vulnerabilities, and potential bugs
+* Highlight the most critical issues
+* Provide real insight into overall code quality and the effort required to get closer to perfection
+
+----
+
 ### Security Tests & Shift-Left Security
 
 > Integrate security checks directly into every CI pipeline run (**DevSecOps**)
@@ -104,15 +113,6 @@
 * Tests drastically reduce the time spent validating a deliverable
 * Tests increase our confidence in our deliverables
 * Tests let us stay focused on creating value instead of spending all our time debugging applications
-
-----
-
-### Code Analysis
-
-* Static or dynamic code analysis tools
-* Report metrics on code quality, vulnerabilities, and potential bugs
-* Highlight the most critical issues
-* Provide real insight into overall code quality and the effort required to get closer to perfection
 
 ----
 

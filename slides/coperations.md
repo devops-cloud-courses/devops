@@ -39,14 +39,12 @@
 
 ----
 
-### SRE Fundamentals: SLI, SLO, SLA & Error Budgets
+### Infrastructure as Code & Immutable Infra
 
-> Resolving the tension between **Dev velocity** and **Ops stability** through objective data
+> Automatically provision machines and all dependencies required for applications to run properly
 
-* **`SLI` (Service Level Indicator)**: Quantitative measure of service health (e.g., `HTTP 2xx` rate, `p99` latency `< 200 ms`)
-* **`SLO` (Service Level Objective)**: Target reliability threshold for an SLI (e.g., `99.9%` availability over 30 days)
-* **`SLA` (Service Level Agreement)**: External business contract defining penalties if reliability commitments are breached
-* **`Error Budget` (`100% - SLO`)**: Allowed unreliability (e.g., `0.1%` = `43 min/month`)—while budget remains, ship fast; if exhausted, prioritize reliability
+* **Pets vs. Cattle**: Stop manually patching long-lived servers (*Pets*); treat infrastructure as disposable, reproducible units provisioned from code (*Cattle*)
+* **Immutable Infrastructure**: Never modify servers in place—replace them with freshly built images or containers on every change
 
 ----
 
@@ -57,12 +55,14 @@
 
 ----
 
-### Infrastructure as Code & Immutable Infra
+### SRE Fundamentals: SLI, SLO, SLA & Error Budgets
 
-> Automatically provision machines and all dependencies required for applications to run properly
+> Resolving the tension between **Dev velocity** and **Ops stability** through objective data
 
-* **Pets vs. Cattle**: Stop manually patching long-lived servers (*Pets*); treat infrastructure as disposable, reproducible units provisioned from code (*Cattle*)
-* **Immutable Infrastructure**: Never modify servers in place—replace them with freshly built images or containers on every change
+* **`SLI` (Service Level Indicator)**: Quantitative measure of service health (e.g., `HTTP 2xx` rate, `p99` latency `< 200 ms`)
+* **`SLO` (Service Level Objective)**: Target reliability threshold for an SLI (e.g., `99.9%` availability over 30 days)
+* **`SLA` (Service Level Agreement)**: External business contract defining penalties if reliability commitments are breached
+* **`Error Budget` (`100% - SLO`)**: Allowed unreliability (e.g., `0.1%` = `43 min/month`)—while budget remains, ship fast; if exhausted, prioritize reliability
 
 ----
 

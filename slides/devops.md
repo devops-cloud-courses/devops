@@ -18,15 +18,15 @@
 
 ----
 
-### Definition
-
-> DevOps is the practice where development (Dev) and operations (Ops) engineers participate together across the entire service lifecycle: from design to production support through development.
-
-----
-
 ### Tear down the wall!
 
 <img src="img/wall-of-confusion.svg" alt="The Wall of Confusion between Development and Operations" />
+
+----
+
+### Definition
+
+> DevOps is the practice where development (Dev) and operations (Ops) engineers participate together across the entire service lifecycle: from design to production support through development.
 
 ----
 
@@ -87,6 +87,15 @@
 
 ----
 
+### Sharing
+
+> A developer must participate in delivering and deploying their deliverable
+
+* Share roles and responsibilities
+* Share failures and successes
+
+----
+
 ### DORA Metrics: Engineering Performance
 
 > Industry-standard metrics (from *Accelerate* / DORA) to measure software delivery & operational maturity
@@ -97,15 +106,6 @@
 | **Throughput** | `Lead Time for Changes` | Time it takes for a committed change to reach production |
 | **Stability** | `Change Failure Rate` | Percentage of deployments causing a failure in production |
 | **Stability** | `Failed Deployment Recovery Time` | Time it takes to restore service after a production incident (`MTTR`) |
-
-----
-
-### Sharing
-
-> A developer must participate in delivering and deploying their deliverable
-
-* Share roles and responsibilities
-* Share failures and successes
 
 ----
 
@@ -126,15 +126,3 @@
 * Not an easy task because you cannot impose a mindset
 * A company can call itself DevOps as soon as it manages to adopt this mindset
 * But the road is long and almost infinite
-
-----
-
-### How to get started
-
-* DevOps can start from the bottom up: a single team can be the driving force
-* Start with simple methodologies to apply within a team
-* Set up automation solutions:
-  * Continuous Integration
-  * Continuous Delivery
-  * Continuous Deployment
-  * Continuous Operations

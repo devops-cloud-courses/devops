@@ -78,3 +78,15 @@
 * Breaks down if Devs ignore production constraints
 
 <img src="img/type-8.svg" alt="Container-Driven Collaboration topology" />
+
+----
+
+### How to get started
+
+* DevOps can start from the bottom up: a single team can be the driving force
+* Start with simple methodologies to apply within a team
+* Set up automation solutions:
+  * Continuous Integration
+  * Continuous Delivery
+  * Continuous Deployment
+  * Continuous Operations

@@ -2,6 +2,93 @@
 
 ----
 
+### Agile practices: Ceremonies
+
+* Sprint Planning
+* Stand-up meeting
+* Sprint review / Demo
+* Sprint retrospective
+
+----
+
+### Sprint Planning
+
+* Duration: 4 hours for a 2-week sprint
+* Participants: Everyone (Dev, PO, SM)
+* Goal: Velocity, Definition of Done, List of tasks to complete during the sprint
+
+> Velocity: Indicative metric of the team's capacity to complete N tasks during a sprint
+
+----
+
+### Stand-up meeting
+
+* Duration: 15 minutes every morning
+* Participants: Everyone (Dev, PO, SM)
+* Goal: Discuss blockers and issues encountered by each team member
+
+----
+
+### Sprint Review / Demo
+
+* Duration: 1-2 hours for a 2-week sprint
+* Participants: Everyone (Dev, PO, SM) and anyone interested in the project's progress
+* Goal: Product demonstration and feedback collection
+
+----
+
+### Sprint retrospective
+
+* Duration: 2 hours for a 2-week sprint
+* Participants: Everyone (Dev, PO, SM); PO attendance is optional
+* Goal: Debrief on what went well, what didn't go well, and what could be improved
+
+----
+
+### DevOps team practices
+
+* Pair Programming
+* Coding Dojo
+* Technical Breakfast
+* Pull Request / Code Review
+
+----
+
+### Pair programming
+
+* Programming in pairs: A **driver** and a **navigator**
+* Roles are swapped regularly
+* Helps everyone involved level up their skills
+* Allows the driver to focus on writing the code
+* Allows the navigator to focus on design and deeper architectural issues
+
+----
+
+### Coding Dojo
+
+* Meeting where multiple people tackle a programming challenge together
+* The goal is to come up with the most optimized solution, agreed upon by all participants
+* Prevents endless debates later on about technical choices made in the past
+
+----
+
+### Technical Breakfast
+
+* Gather around a speaker sharing feedback and experience on a technology or methodology
+* Helps share knowledge effectively across a company
+* Helps the speaker deepen their own knowledge while preparing the topic
+
+----
+
+### And many more...
+
+* `TDD` - Test Driven Development
+* `BDD` - Behavior Driven Development
+* Feature Flipping
+* A/B Testing
+
+----
+
 ### Using a VCS
 
 * VCS: Version Control System
@@ -54,65 +141,6 @@
 
 ----
 
-### Learn how to use Git
-
-* [The official website](https://git-scm.com/book/en/v2)
-* [Step-by-step tutorial](https://www.atlassian.com/git/tutorials/what-is-git)
-
-----
-
-### Agile practices: Ceremonies
-
-* Sprint Planning
-* Stand-up meeting
-* Sprint review / Demo
-* Sprint retrospective
-
-----
-
-### Sprint Planning
-
-* Duration: 4 hours for a 2-week sprint
-* Participants: Everyone (Dev, PO, SM)
-* Goal: Velocity, Definition of Done, List of tasks to complete during the sprint
-
-> Velocity: Indicative metric of the team's capacity to complete N tasks during a sprint
-
-----
-
-### Stand-up meeting
-
-* Duration: 15 minutes every morning
-* Participants: Everyone (Dev, PO, SM)
-* Goal: Discuss blockers and issues encountered by each team member
-
-----
-
-### Sprint Review / Demo
-
-* Duration: 1-2 hours for a 2-week sprint
-* Participants: Everyone (Dev, PO, SM) and anyone interested in the project's progress
-* Goal: Product demonstration and feedback collection
-
-----
-
-### Sprint retrospective
-
-* Duration: 2 hours for a 2-week sprint
-* Participants: Everyone (Dev, PO, SM); PO attendance is optional
-* Goal: Debrief on what went well, what didn't go well, and what could be improved
-
-----
-
-### DevOps team practices
-
-* Pull Request / Code Review
-* Coding Dojo
-* Pair Programming
-* Technical Breakfast
-
-----
-
 ### Pull Request / Code Review
 
 * Instead of merging a branch directly into another, open a merge request
@@ -121,35 +149,7 @@
 
 ----
 
-### Pair programming
+### Learn how to use Git
 
-* Programming in pairs: A **driver** and a **navigator**
-* Roles are swapped regularly
-* Helps everyone involved level up their skills
-* Allows the driver to focus on writing the code
-* Allows the navigator to focus on design and deeper architectural issues
-
-----
-
-### Coding Dojo
-
-* Meeting where multiple people tackle a programming challenge together
-* The goal is to come up with the most optimized solution, agreed upon by all participants
-* Prevents endless debates later on about technical choices made in the past
-
-----
-
-### Technical Breakfast
-
-* Gather around a speaker sharing feedback and experience on a technology or methodology
-* Helps share knowledge effectively across a company
-* Helps the speaker deepen their own knowledge while preparing the topic
-
-----
-
-### And many more...
-
-* `TDD` - Test Driven Development
-* `BDD` - Behavior Driven Development
-* Feature Flipping
-* A/B Testing
+* [The official website](https://git-scm.com/book/en/v2)
+* [Step-by-step tutorial](https://www.atlassian.com/git/tutorials/what-is-git)
